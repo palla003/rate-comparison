@@ -70,6 +70,7 @@ SYSTEM = """あなたは銀行の公式ページから円預金の金利情報�
 - 外貨預金、仕組預金、投資信託、ローン、法人向けは含めない。
 - 既に終了したと書かれているキャンペーンは含めない。
 - 今日の日付は {today}。年の書かれていない日付はこれを基準に解釈する。
+- 本文には監視ページの後に『--- リンク先 ---』としてリンク先のページやPDFが続くことがある。そこに書かれた金利も対象にする。
 - 金利が見つからなければ offers は空にし、note に理由を書く。"""
 
 
@@ -106,7 +107,11 @@ def robots_ok(url: str) -> bool:
     return rp.can_fetch(UA, url)
 
 
-def fetch_text(url: str) -> str:
+LINK_WORDS = re.compile(r"定期|金利|利率|キャンペーン|特別|プレミアム|優遇")
+MAX_LINKS = 6     # 1ページから追加で読むリンク先の上限
+
+
+def get(url: str) -> requests.Response:
     if not robots_ok(url):
         raise PermissionError("robots.txt で取得が禁止されているため読まない")
     last = None
@@ -114,20 +119,76 @@ def fetch_text(url: str) -> str:
         try:
             r = requests.get(url, headers={"User-Agent": UA}, timeout=60)
             r.raise_for_status()
-            break
+            return r
         except (requests.ConnectionError, requests.Timeout) as e:
             last = e
             time.sleep(5 * (attempt + 1))
-    else:
-        raise last
+    raise last
+
+
+def clean(text: str) -> str:
+    text = re.sub(r"[ \t\u3000]+", " ", text)
+    text = re.sub(r"\n\s*\n+", "\n", text)
+    return text.strip()
+
+
+def pdf_text(data: bytes) -> str:
+    import io
+    from pypdf import PdfReader
+    return clean("\n".join((pg.extract_text() or "") for pg in PdfReader(io.BytesIO(data)).pages))
+
+
+def html_soup(r: requests.Response) -> BeautifulSoup:
     r.encoding = r.apparent_encoding if r.encoding in (None, "ISO-8859-1") else r.encoding
     soup = BeautifulSoup(r.text, "html.parser")
     for t in soup(["script", "style", "noscript", "svg", "header", "footer", "nav"]):
         t.decompose()
-    text = soup.get_text("\n")
-    text = re.sub(r"[ \t　]+", " ", text)
-    text = re.sub(r"\n\s*\n+", "\n", text)
-    return text.strip()
+    for img in soup.find_all("img"):              # バナー画像の代替テキストに金利が書かれていることが多い
+        if img.get("alt"):
+            img.replace_with(f" [画像: {img['alt']}] ")
+    return soup
+
+
+def page_text(url: str) -> str:
+    r = get(url)
+    if "pdf" in r.headers.get("Content-Type", "") or url.lower().endswith(".pdf"):
+        return pdf_text(r.content)
+    return clean(html_soup(r).get_text("\n"))
+
+
+def fetch_text(url: str) -> str:
+    """監視ページの本文に加え、同じサイト内の『定期・金利・キャンペーン』系リンク先(HTML/PDF)も読む。
+    トップページやお知らせ一覧には金利の数字が無く、リンク先に書かれていることが多いため。"""
+    from urllib.parse import urljoin, urlsplit
+    r = get(url)
+    soup = html_soup(r)
+    parts = [clean(soup.get_text("\n"))]
+    host = urlsplit(url).netloc
+    seen, links = {url.split("#")[0]}, []
+    for a in soup.find_all("a", href=True):
+        href = urljoin(url, a["href"]).split("#")[0]
+        label = a.get_text(" ", strip=True)
+        if urlsplit(href).netloc != host or href in seen or not href.startswith("http"):
+            continue
+        if LINK_WORDS.search(label) or LINK_WORDS.search(a.get("title", "")):
+            seen.add(href)
+            links.append((href, label))
+    used = 0
+    for href, label in links[:MAX_LINKS]:
+        try:
+            t = page_text(href)
+        except Exception as e:  # noqa: BLE001  リンク先の失敗は本体の失敗にしない
+            print(f"    リンク先を読めず {href}: {type(e).__name__}", file=sys.stderr)
+            continue
+        if sum(map(len, parts)) + len(t) > MAX_CHARS:
+            print(f"    文字数の上限のため読まないリンク: {href}", file=sys.stderr)
+            continue
+        parts.append(f"--- リンク先「{label[:40]}」 {href} ---\n{t}")
+        used += 1
+        time.sleep(1)
+    if len(links) > MAX_LINKS:
+        print(f"    リンク候補{len(links)}件のうち先頭{MAX_LINKS}件だけ読んだ", file=sys.stderr)
+    return "\n".join(parts)
 
 
 def extract(client, name: str, url: str, text: str) -> PageResult:

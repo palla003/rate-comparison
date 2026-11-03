@@ -4,7 +4,7 @@
 #   apply_url: 申込リンク。アフィリエイト(A8.netなど)に登録したら、ここを広告リンクに差し替える。空なら url を使う。
 #   ad: true なら申込リンクを広告(PR)として表示する。ステマ規制により広告リンクには表示が必須。
 # ページが変わって読めなくなった場合は、通知が来るので url を直す。
-# 自動取得を拒否しているサイト(403やrobots.txtで禁止)は載せない。ドコモSMTBネット銀行は403のため外した。
+# 自動取得を拒否しているサイト(403やrobots.txtで禁止)は載せない。ドコモSMTBネット銀行・楽天銀行・UI銀行は403のため外した。
 
 sources:
   - name: SBI新生銀行
@@ -13,12 +13,8 @@ sources:
     url: https://www.orixbank.co.jp/personal/deposit/
   - name: auじぶん銀行
     url: https://www.jibunbank.co.jp/products/yen_deposit/
-  - name: 楽天銀行
-    url: https://www.rakuten-bank.co.jp/interest/
   - name: SBJ銀行
     url: https://www.sbjbank.co.jp/
-  - name: UI銀行
-    url: https://www.uibank.co.jp/
   - name: あおぞら銀行 BANK
     url: https://www.aozorabank.co.jp/bank/kinri/
   - name: GMOあおぞらネット銀行
