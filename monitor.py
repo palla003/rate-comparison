@@ -46,7 +46,7 @@ UA = "Mozilla/5.0 (compatible; deposit-campaign-monitor/1.0)"
 class Offer(BaseModel):
     product: str = Field(description="商品名・キャンペーン名")
     kind: str = Field(description="'定期預金' か '普通預金'")
-    term_months: Optional[int] = Field(description="預入期間(月)。普通預金や不明は null。1年=12")
+    term_months: Optional[int] = Field(description="預入期間(月)。普通預金や不明は null。1年=12、15年=180")
     rate_pct: float = Field(description="年利(税引前, %)。'最大'表記なら最大値")
     rate_is_max: bool = Field(description="条件次第の『最大』金利なら true")
     new_customer_only: bool = Field(description="新規口座開設者・初回限定なら true")
@@ -67,7 +67,7 @@ SYSTEM = """あなたは銀行の公式ページから円預金の金利情報�
 
 - 書かれている数字だけを使う。推測で補わない。期間ごとに金利が違えば期間ごとに1件ずつ出す。
 - 店頭金利が0.1%未満の通常金利のような目立たないものは省いてよいが、キャンペーン・特別金利・優遇金利は必ず含める。
-- 外貨預金、仕組預金、投資信託、ローン、法人向けは含めない。
+- 外貨預金、外貨預金や投資信託とのセットが条件の円定期(『円外貨セット』『セットプラン』など)、仕組預金、投資信託、ローン、法人向けは含めない。
 - 既に終了したと書かれているキャンペーンは含めない。
 - 今日の日付は {today}。年の書かれていない日付はこれを基準に解釈する。
 - 本文には監視ページの後に『--- リンク先 ---』としてリンク先のページやPDFが続くことがある。そこに書かれた金利も対象にする。
@@ -211,7 +211,7 @@ def extract(client, name: str, url: str, text: str) -> PageResult:
 def sane(o: dict) -> bool:
     if not (0 < o["rate_pct"] < 5):
         return False
-    if o["term_months"] is not None and not (1 <= o["term_months"] <= 120):
+    if o["term_months"] is not None and not (1 <= o["term_months"] <= 240):
         return False
     return True
 
@@ -308,7 +308,7 @@ def main() -> int:
                 raise RuntimeError(f"本文が長すぎる({len(text)}字)。URLを金利ページに絞ってください")
             # お知らせ欄や日付の変化で毎日読み直さないよう、金利(%)を含む行だけで変化を判定する
             rate_lines = "\n".join(l for l in text.splitlines() if "%" in l or "％" in l)
-            h = hashlib.sha256(rate_lines.encode()).hexdigest()
+            h = hashlib.sha256((MODEL + SYSTEM + rate_lines).encode()).hexdigest()  # 指示やモデルを変えたら読み直す
             if h == prev.get("hash") and "offers" in prev:
                 rec["checked_at"] = stamp
                 rec["error"] = None
