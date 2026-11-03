@@ -23,5 +23,5 @@ start site\index.html
 4. Actions タブで update を手動実行(Run workflow)
 
 ## 費用の目安
-金利(%)を含む行が変わったページだけClaudeに読ませる。既定のモデル(claude-opus-5-5)では1ページ約5〜20円、
-初回は25ページで数百円、以後は変化した分だけ。安くしたい場合は環境変数 `CAMPAIGN_MODEL=claude-haiku-5-5` で約40分の1になる(読み取り精度は要確認)。
+金利(%)を含む行が変わったページだけClaudeに読ませる。既定のモデルは claude-haiku-5-5 で、月に数十円程度。
+読み取りの誤りが多ければ環境変数 `CAMPAIGN_MODEL=claude-opus-5-5` に切り替える(費用は約40倍)。

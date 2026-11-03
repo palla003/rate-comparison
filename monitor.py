@@ -34,7 +34,7 @@ OFFERS = DATA / "offers.json"
 EVENTS = DATA / "events.json"
 JST = dt.timezone(dt.timedelta(hours=9))
 
-MODEL = os.environ.get("CAMPAIGN_MODEL", "claude-opus-5-5")
+MODEL = os.environ.get("CAMPAIGN_MODEL", "claude-haiku-5-5")
 MAX_CHARS = 150_000          # 本文がこれを超えたら読み取らずに異常として通知する(黙って切り詰めない)
 STALE_DAYS = 7
 ALERT_RATE = float(os.environ.get("ALERT_RATE_PCT", "1.8"))   # これ以上の新着は強調して通知
