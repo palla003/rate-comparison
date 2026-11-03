@@ -112,6 +112,8 @@ def main():
     has_ad = any(s.get("ad") for s in srcs.values())
     desc = (f"ネット銀行・ネット支店・信用金庫の円定期預金キャンペーン{len(offers)}件を毎朝確認し、期間別に金利の高い順に並べています。"
             + (f"今日の最高は{top['bank']}の{term_label(top)} 年{top['rate_pct']:.2f}%。" if top else ""))
+    sister = ('<p>姉妹欄: <a href="furusato/">ふるさと納税 量の欄</a></p>'
+              if (ROOT / "data" / "furusato.json").exists() else "")
     canon = f'<link rel="canonical" href="{SITE_URL}/">' if SITE_URL else ""
 
     page = f"""<!doctype html><html lang="ja"><head><meta charset="utf-8">
@@ -144,7 +146,7 @@ def main():
 <div><h3>掲載の方針</h3>
 <p>並び順は金利の高さだけで決めています。{'一部のリンクは広告で、「広告」と表示しています。広告かどうかで順番は変えていません。' if has_ad else '広告は載せていません。'}</p>
 <p>特定の金融商品への勧誘を目的としたものではありません。</p>
-<p>姉妹欄: <a href="furusato/">ふるさと納税 量の欄</a></p></div>
+{sister}</div>
 </div></footer>
 <script>document.getElementById('hn').addEventListener('change',function(){{document.getElementById('t').classList.toggle('hide-new',this.checked)}})</script>
 </body></html>"""
