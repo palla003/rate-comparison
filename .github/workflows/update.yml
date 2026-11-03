@@ -1,21 +1,37 @@
+# 毎朝6:30(日本時間)に 取得・読み取り → サイト作成・公開 → X投稿 → data/ を保存。
+# 全体障害(APIのクレジット切れなど)や投稿失敗があれば、サイトは前回の値で公開したうえでジョブを失敗にする
+# (GitHubから失敗メールが届く。DISCORD_WEBHOOK_URL があればDiscordにも届く)。
 name: update
+
 on:
   schedule:
-    - cron: "30 21 * * *"   # 毎朝6:30(日本時間)
-  workflow_dispatch: {}
+    - cron: "30 21 * * *"   # UTC 21:30 = JST 6:30
+  workflow_dispatch:
+
 permissions:
   contents: write
   pages: write
   id-token: write
+
 concurrency:
   group: update
   cancel-in-progress: false
+
 jobs:
   update:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deploy.outputs.page_url }}
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      X_API_KEY: ${{ secrets.X_API_KEY }}
+      X_API_SECRET: ${{ secrets.X_API_SECRET }}
+      X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
+      X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
+      SITE_URL: ${{ vars.SITE_URL }}
+      CAMPAIGN_MODEL: ${{ vars.CAMPAIGN_MODEL || 'claude-haiku-5-5' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -23,25 +39,40 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
-      - name: 監視
-        env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+
+      - name: 取得・読み取り
+        id: monitor
+        continue-on-error: true
         run: python monitor.py
-      - name: データを保存
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data
-          git diff --cached --quiet || git commit -m "data: $(date -u +%F)"
-          git push
-      - name: サイトを作る
-        env:
-          SITE_URL: ${{ vars.SITE_URL }}
+
+      - name: サイト作成
         run: python build_site.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
-      - id: deploy
+      - name: 公開
+        id: deploy
         uses: actions/deploy-pages@v4
+
+      - name: X投稿
+        id: post
+        continue-on-error: true
+        run: python post_x.py
+
+      - name: data/ を保存
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          if ! git diff --cached --quiet; then
+            git commit -m "data: $(date -u +%F)"
+            git push
+          fi
+
+      - name: 異常があれば失敗にする
+        if: steps.monitor.outcome == 'failure' || steps.post.outcome == 'failure'
+        run: |
+          echo "::error::monitor=${{ steps.monitor.outcome }} post=${{ steps.post.outcome }}。ログとDiscordの通知を確認してください"
+          exit 1

@@ -23,8 +23,8 @@ sources:
     url: https://www.aozorabank.co.jp/bank/kinri/
   - name: GMOあおぞらネット銀行
     url: https://gmo-aozora.com/priv/contents/interest.html
-  - name: 静岡銀行 しずぎんインターネット支店
-    url: https://shizugin.net/campaign/
+  - name: 静岡銀行 しずぎんダイレクト専用定期
+    url: https://www.shizuokabank.co.jp/lp/direct_cp_202604/index.html   # キャンペーンごとにURLが変わる。404の通知が来たら差し替える
   - name: スルガ銀行 Dバンク支店
     url: https://www.surugabank.co.jp/d-bank/
   - name: トマト銀行 ももたろう支店

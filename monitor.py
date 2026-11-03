@@ -10,6 +10,8 @@
   * ページが取れない・読めない日は前回の値を残し、7日続いたら「要確認」にして通知する
   * 前回あった案件が急にゼロになったら、ページの作りが変わった可能性として通知する(値は前回を残す)
   * 期限が過ぎた案件はサイトから自動で外す
+  * クレジット切れ・キー無効などAPI側の障害は、その時点で読み取りを止めて1通だけ知らせ、終了コード2で終わる
+  * 通知には「何を直せばよいか」の目安を添える
 """
 from __future__ import annotations
 
@@ -161,6 +163,34 @@ def expired(o: dict, today: str) -> bool:
     return bool(o.get("end_date")) and o["end_date"] < today
 
 
+def api_problem(e: Exception) -> Optional[str]:
+    """ページではなくAPI側の問題(全行に効く)なら、人がやることを返す。"""
+    import anthropic
+
+    if "credit balance" in str(e):
+        return "Anthropic APIのクレジット残高が不足しています。console.anthropic.com の Plans & Billing で追加してください"
+    if isinstance(e, (anthropic.AuthenticationError, anthropic.PermissionDeniedError)):
+        return "ANTHROPIC_API_KEY が無効です。キーを確認してください"
+    if isinstance(e, anthropic.NotFoundError):
+        return f"モデル {MODEL} が使えません。CAMPAIGN_MODEL を確認してください"
+    return None
+
+
+def hint(err: str) -> str:
+    """ページ単位の失敗に、直し方の目安を添える。"""
+    if "robots.txt" in err:
+        return "サイトが自動取得を禁止しています。sources.yaml から外してください"
+    if "404" in err:
+        return "URLが変わった可能性。sources.yaml の url を新しいページに直してください"
+    if "403" in err:
+        return "サイト側がアクセスを拒否しています。続くなら sources.yaml から外してください"
+    if "Timeout" in err or "Connection" in err:
+        return "一時的な通信障害の可能性。7日続いたらURLを確認してください"
+    if "0件になった" in err:
+        return "ページの作りが変わった可能性。公式ページを確認してください"
+    return ""
+
+
 def notify(lines: list[str]) -> None:
     hook = os.environ.get("DISCORD_WEBHOOK_URL")
     if not hook or not lines:
@@ -192,17 +222,27 @@ def main() -> int:
     stamp = now_jst().isoformat(timespec="minutes")
 
     new_lines, warn_lines = [], []
+    api_down: Optional[str] = None   # API側の問題が分かったら、以降は読み取りを呼ばない
+    if not os.environ.get("ANTHROPIC_API_KEY"):
+        api_down = "ANTHROPIC_API_KEY が設定されていません"
+    api_conn_fails = fetch_fails = 0
     old_rates = {offer_key(o): o["rate_pct"] for s in state["sources"].values() for o in s.get("offers", [])
                  if not expired(o, today)}
     old_keys = set(old_rates)
 
-    for src in sources:
+    for i, src in enumerate(sources):
+        if i:
+            time.sleep(2)   # 相手のサーバーに優しく
         name, url = src["name"], src["url"]
         prev = state["sources"].get(name, {})
         rec = dict(prev)
         rec.update(name=name, url=url, apply_url=src.get("apply_url") or url, ad=bool(src.get("ad")))
         try:
-            text = fetch_text(url)
+            try:
+                text = fetch_text(url)
+            except requests.RequestException:
+                fetch_fails += 1
+                raise
             if len(text) > MAX_CHARS:
                 raise RuntimeError(f"本文が長すぎる({len(text)}字)。URLを金利ページに絞ってください")
             # お知らせ欄や日付の変化で毎日読み直さないよう、金利(%)を含む行だけで変化を判定する
@@ -212,8 +252,27 @@ def main() -> int:
                 rec["checked_at"] = stamp
                 rec["error"] = None
                 rec["fail_since"] = None
+            elif api_down:
+                rec["error"] = f"未読取: {api_down}"[:300]   # ページの問題ではないので fail_since は進めない
+                print(f"--  {name}: API停止中のため読み取りを省略", file=sys.stderr)
+                state["sources"][name] = rec
+                continue
             else:
-                res = extract(client, name, url, text)
+                try:
+                    res = extract(client, name, url, text)
+                    api_conn_fails = 0
+                except anthropic.APIError as e:
+                    if isinstance(e, (anthropic.APIConnectionError, anthropic.InternalServerError)):
+                        api_conn_fails += 1
+                        if api_conn_fails >= 3:
+                            api_down = f"Claude APIに3回続けて接続できません({type(e).__name__}: {e.__cause__ or e})"
+                    else:
+                        api_down = api_problem(e)
+                    # API側の失敗はページの故障ではないので、fail_since は進めず前回の値を残す
+                    rec["error"] = f"未読取: {api_down or f'{type(e).__name__}: {e}'}"[:300]
+                    print(f"NG  {name}: {rec['error']}", file=sys.stderr)
+                    state["sources"][name] = rec
+                    continue
                 offers = []
                 for o in res.offers:
                     d = o.model_dump()
@@ -234,9 +293,10 @@ def main() -> int:
             print(f"NG  {name}: {rec['error']}", file=sys.stderr)
             days = (dt.date.fromisoformat(today) - dt.date.fromisoformat(rec["fail_since"])).days
             if days in (0, STALE_DAYS):   # 初日と7日目だけ知らせる(毎日鳴らさない)
-                warn_lines.append(f"⚠ {name}: 取得/読み取り失敗({days}日目) {rec['error'][:120]}\n{url}")
+                tip = hint(rec["error"])
+                warn_lines.append(f"⚠ {name}: 取得/読み取り失敗({days}日目) {rec['error'][:120]}\n"
+                                  f"{url}" + (f"\n→ {tip}" if tip else ""))
         state["sources"][name] = rec
-        time.sleep(2)   # 相手のサーバーに優しく
 
     # 消えたsourceの掃除
     names = {s["name"] for s in sources}
@@ -260,6 +320,14 @@ def main() -> int:
     save_json(OFFERS, state)
     save_json(EVENTS, events)
 
+    # 全体に効く障害は1行ずつではなく、まとめて先頭で知らせる
+    systemic = []
+    if api_down:
+        systemic.append(f"🚨 {api_down}(読み取りを止め、前回の値を表示しています)")
+    if fetch_fails * 2 >= len(sources):
+        systemic.append(f"🚨 {fetch_fails}/{len(sources)}ページが取得できません。実行環境のネットワーク障害の可能性があります")
+    warn_lines = systemic + warn_lines
+
     lines = []
     if new_lines:
         lines += ["**新しい預金キャンペーン**"] + sorted(new_lines, reverse=True)
@@ -268,7 +336,10 @@ def main() -> int:
     notify(lines)
     ok = sum(1 for s in state["sources"].values() if not s.get("error"))
     print(f"完了: {ok}/{len(sources)}行が正常、現在の案件{len(cur)}件")
-    return 0
+    for s in systemic:
+        print(s, file=sys.stderr)
+    # 全体障害は終了コード2。GitHub Actions が失敗扱いにしてメールでも知らせる(サイトは前回の値で更新を続ける)
+    return 2 if systemic else 0
 
 
 if __name__ == "__main__":

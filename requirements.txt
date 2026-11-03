@@ -1,6 +1,8 @@
 anthropic>=2.4
 pydantic>=2
 requests
+requests-oauthlib
 beautifulsoup4
 pyyaml
+# 古いBrotli(1.1)が入っているとanthropicの応答の解凍で落ちるため
 brotli>=1.2
