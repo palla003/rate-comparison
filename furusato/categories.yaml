@@ -1,0 +1,56 @@
+# ふるさと納税の量あたりランキングで扱うカテゴリ。
+#   keyword: 楽天の検索語(「ふるさと納税」は自動で付く)
+#   unit: 量の単位。AIはこの単位に換算した合計量を読み取る
+#   per: 「寄付1万円あたり」の表示に使う言い回し
+#   hint: 読み取りの注意(何を量に数えるか)
+categories:
+  - slug: rice
+    name: お米
+    keyword: 米 kg
+    unit: kg
+    hint: 白米・無洗米・玄米の重さ。定期便は全回の合計。パックご飯や餅は対象外(qtyをnullに)。
+  - slug: beef
+    name: 牛肉
+    keyword: 牛肉 kg
+    unit: kg
+    hint: 肉の正味重量。ハンバーグや加工品は対象外。タレ込みの重量なら note に書く。
+  - slug: pork
+    name: 豚肉
+    keyword: 豚肉 kg
+    unit: kg
+    hint: 肉の正味重量。ソーセージ・ハム・加工品は対象外。
+  - slug: chicken
+    name: 鶏肉
+    keyword: 鶏肉 kg
+    unit: kg
+    hint: 肉の正味重量。唐揚げなど調理済みは対象外。
+  - slug: scallop
+    name: ホタテ
+    keyword: ホタテ 貝柱 kg
+    unit: kg
+    hint: 貝柱の正味重量。殻付きは対象外。
+  - slug: ikura
+    name: いくら
+    keyword: いくら 醤油漬け
+    unit: kg
+    hint: いくらの重量(g→kg)。
+  - slug: shrimp
+    name: えび
+    keyword: えび 冷凍 kg
+    unit: kg
+    hint: 冷凍えびの重量。グレーズ(氷)を含むかは note に。加工品(フライ等)は対象外。
+  - slug: toilet
+    name: トイレットペーパー
+    keyword: トイレットペーパー
+    unit: m
+    hint: 全ロールの長さの合計(ロール数×1ロールの長さ、メートル)。ダブルでもそのままの長さ。
+  - slug: tissue
+    name: ティッシュ
+    keyword: ティッシュペーパー 箱
+    unit: 組
+    hint: 全箱の合計組数(箱数×1箱の組数)。
+  - slug: water
+    name: 水
+    keyword: 天然水 ミネラルウォーター
+    unit: L
+    hint: 全本数の合計リットル。定期便は全回の合計。

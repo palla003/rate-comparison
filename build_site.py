@@ -143,7 +143,8 @@ def main():
 <p>読み取りの誤りや更新の遅れがあり得ます。申し込む前に、必ず各銀行の公式ページで条件をご確認ください。</p></div>
 <div><h3>掲載の方針</h3>
 <p>並び順は金利の高さだけで決めています。{'一部のリンクは広告で、「広告」と表示しています。広告かどうかで順番は変えていません。' if has_ad else '広告は載せていません。'}</p>
-<p>特定の金融商品への勧誘を目的としたものではありません。</p></div>
+<p>特定の金融商品への勧誘を目的としたものではありません。</p>
+<p>姉妹欄: <a href="furusato/">ふるさと納税 量の欄</a></p></div>
 </div></footer>
 <script>document.getElementById('hn').addEventListener('change',function(){{document.getElementById('t').classList.toggle('hide-new',this.checked)}})</script>
 </body></html>"""
