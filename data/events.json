@@ -1392,5 +1392,1260 @@
   "date": "2026-11-03",
   "type": "gone",
   "key": "あおぞら銀行 BANK|円定期預金（BANK The 定期）1年 単利型|12"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "eダイレクト定期預金 優遇金利プログラム 1年",
+   "kind": "定期預金",
+   "term_months": 12,
+   "rate_pct": 1.75,
+   "rate_is_max": false,
+   "new_customer_only": true,
+   "min_amount_yen": 1000000,
+   "conditions": "新規口座開設者限定。口座開設日から翌々月末日まで申込可。預入上限2,000万円。お客さま専用ページからの申込に限る",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "オリックス銀行"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "eダイレクト定期預金 優遇金利プログラム 2年",
+   "kind": "定期預金",
+   "term_months": 24,
+   "rate_pct": 1.8,
+   "rate_is_max": false,
+   "new_customer_only": true,
+   "min_amount_yen": 1000000,
+   "conditions": "新規口座開設者限定。口座開設日から翌々月末日まで申込可。預入上限2,000万円。お客さま専用ページからの申込に限る",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "オリックス銀行"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "eダイレクト定期預金 優遇金利プログラム 5年",
+   "kind": "定期預金",
+   "term_months": 60,
+   "rate_pct": 1.85,
+   "rate_is_max": false,
+   "new_customer_only": true,
+   "min_amount_yen": 1000000,
+   "conditions": "新規口座開設者限定。口座開設日から翌々月末日まで申込可。預入上限2,000万円。お客さま専用ページからの申込に限る",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "オリックス銀行"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "好金利で貯める（定期預金）",
+   "kind": "定期預金",
+   "term_months": null,
+   "rate_pct": 1.75,
+   "rate_is_max": true,
+   "new_customer_only": false,
+   "min_amount_yen": null,
+   "conditions": "すべてのお客さま対象。満期日指定方式は端数期間切捨て後の定型基準金利を適用",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "SBJ銀行"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "1週間（なのか）定期預金",
+   "kind": "定期預金",
+   "term_months": null,
+   "rate_pct": 0.45,
+   "rate_is_max": true,
+   "new_customer_only": false,
+   "min_amount_yen": null,
+   "conditions": "1週間（7日）で満期となる超短期定期預金",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "SBJ銀行"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "円普通預金（BANK）",
+   "kind": "普通預金",
+   "term_months": null,
+   "rate_pct": 1.2,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 1,
+   "conditions": "預入金額100万円以下の部分の変動金利。BANK口座限定",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "あおぞら銀行 BANK"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "円普通預金（BANK）",
+   "kind": "普通預金",
+   "term_months": null,
+   "rate_pct": 0.75,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 1000001,
+   "conditions": "預入金額100万円超の変動金利。BANK口座限定",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "あおぞら銀行 BANK"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "BANK The 定期",
+   "kind": "定期預金",
+   "term_months": 6,
+   "rate_pct": 1.2,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 500000,
+   "conditions": "50万円以上1円単位。固定金利。単利型。BANK口座限定。中途解約利率年0.1%",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "あおぞら銀行 BANK"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "BANK The 定期",
+   "kind": "定期預金",
+   "term_months": 12,
+   "rate_pct": 1.4,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 500000,
+   "conditions": "50万円以上1円単位。固定金利。単利型。BANK口座限定。中途解約利率年0.1%",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "あおぞら銀行 BANK"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "BANK The 定期",
+   "kind": "定期預金",
+   "term_months": 24,
+   "rate_pct": 1.5,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 500000,
+   "conditions": "50万円以上1円単位。固定金利。半年複利型。BANK口座限定。中途解約利率年0.1%",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "あおぞら銀行 BANK"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "BANK The 定期",
+   "kind": "定期預金",
+   "term_months": 36,
+   "rate_pct": 1.6,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 500000,
+   "conditions": "50万円以上1円単位。固定金利。半年複利型。BANK口座限定。中途解約利率年0.1%",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "あおぞら銀行 BANK"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "BANK The 定期",
+   "kind": "定期預金",
+   "term_months": 60,
+   "rate_pct": 1.7,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 500000,
+   "conditions": "50万円以上1円単位。固定金利。半年複利型。BANK口座限定。中途解約利率年0.1%",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "あおぞら銀行 BANK"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "スマ口座 普通預金金利",
+   "kind": "普通預金",
+   "term_months": null,
+   "rate_pct": 0.5,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": null,
+   "conditions": "2026年11月2日現在の金利・税引後年利0.398%・キャンペーンではない通常金利",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "スルガ銀行 Dバンク支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "清水みなとインターネット支店専用定期預金（Bon Voyage）1ヶ月",
+   "kind": "定期預金",
+   "term_months": 1,
+   "rate_pct": 0.425,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "インターネット支店の普通預金口座が必要。新規預入資金のみ対象。",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "清水銀行 清水みなとインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "清水みなとインターネット支店専用定期預金（Bon Voyage）2ヶ月",
+   "kind": "定期預金",
+   "term_months": 2,
+   "rate_pct": 0.425,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "インターネット支店の普通預金口座が必要。新規預入資金のみ対象。",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "清水銀行 清水みなとインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "清水みなとインターネット支店専用定期預金（Bon Voyage）3ヶ月",
+   "kind": "定期預金",
+   "term_months": 3,
+   "rate_pct": 0.425,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "インターネット支店の普通預金口座が必要。新規預入資金のみ対象。",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "清水銀行 清水みなとインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "清水みなとインターネット支店専用定期預金（Bon Voyage）6ヶ月",
+   "kind": "定期預金",
+   "term_months": 6,
+   "rate_pct": 0.425,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "インターネット支店の普通預金口座が必要。新規預入資金のみ対象。",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "清水銀行 清水みなとインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "清水みなとインターネット支店専用定期預金（Bon Voyage）1年",
+   "kind": "定期預金",
+   "term_months": 12,
+   "rate_pct": 1.039,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "インターネット支店の普通預金口座が必要。新規預入資金のみ対象。取扱期間未定。",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "清水銀行 清水みなとインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "清水みなとインターネット支店専用定期預金（Bon Voyage）2年",
+   "kind": "定期預金",
+   "term_months": 24,
+   "rate_pct": 0.5,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "インターネット支店の普通預金口座が必要。新規預入資金のみ対象。取扱期間未定。",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "清水銀行 清水みなとインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "清水みなとインターネット支店専用定期預金（Bon Voyage）3年",
+   "kind": "定期預金",
+   "term_months": 36,
+   "rate_pct": 1.039,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "インターネット支店の普通預金口座が必要。新規預入資金のみ対象。取扱期間未定。",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "清水銀行 清水みなとインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "清水みなとインターネット支店専用定期預金（Bon Voyage）4年",
+   "kind": "定期預金",
+   "term_months": 48,
+   "rate_pct": 0.6,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "インターネット支店の普通預金口座が必要。新規預入資金のみ対象。取扱期間未定。",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "清水銀行 清水みなとインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "清水みなとインターネット支店専用定期預金（Bon Voyage）5年",
+   "kind": "定期預金",
+   "term_months": 60,
+   "rate_pct": 1.039,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "インターネット支店の普通預金口座が必要。新規預入資金のみ対象。取扱期間未定。",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "清水銀行 清水みなとインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "清水みなとインターネット支店 普通預金",
+   "kind": "普通預金",
+   "term_months": null,
+   "rate_pct": 0.4,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": null,
+   "conditions": "ご来店不要で開設可能。令和8年10月26日時点の金利。",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "清水銀行 清水みなとインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "金利マシマシ定期預金Ⅱ（1年）",
+   "kind": "定期預金",
+   "term_months": 12,
+   "rate_pct": 1.8,
+   "rate_is_max": true,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "募集総額で基準1.0%～最大1.8%、満期時に上乗せ。10月預入、一口10万～1,000万円未満",
+   "start_date": "2026-10-06",
+   "end_date": "2027-03-30",
+   "quota": "200億円（達し次第終了）",
+   "bank": "きらやか銀行 SBIさくらんぼ支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "金利マシマシ定期預金Ⅱ（11か月）",
+   "kind": "定期預金",
+   "term_months": 11,
+   "rate_pct": 1.8,
+   "rate_is_max": true,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "募集総額で基準1.0%～最大1.8%、満期時に上乗せ。11月預入",
+   "start_date": "2026-10-06",
+   "end_date": "2027-03-30",
+   "quota": "200億円（達し次第終了）",
+   "bank": "きらやか銀行 SBIさくらんぼ支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "金利マシマシ定期預金Ⅱ（10か月）",
+   "kind": "定期預金",
+   "term_months": 10,
+   "rate_pct": 1.8,
+   "rate_is_max": true,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "募集総額で基準1.0%～最大1.8%、満期時に上乗せ。12月預入",
+   "start_date": "2026-10-06",
+   "end_date": "2027-03-30",
+   "quota": "200億円（達し次第終了）",
+   "bank": "きらやか銀行 SBIさくらんぼ支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "金利マシマシ定期預金Ⅱ（9か月）",
+   "kind": "定期預金",
+   "term_months": 9,
+   "rate_pct": 1.8,
+   "rate_is_max": true,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "募集総額で基準1.0%～最大1.8%、満期時に上乗せ。1月預入",
+   "start_date": "2026-10-06",
+   "end_date": "2027-03-30",
+   "quota": "200億円（達し次第終了）",
+   "bank": "きらやか銀行 SBIさくらんぼ支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "金利マシマシ定期預金Ⅱ（8か月）",
+   "kind": "定期預金",
+   "term_months": 8,
+   "rate_pct": 1.8,
+   "rate_is_max": true,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "募集総額で基準1.0%～最大1.8%、満期時に上乗せ。2月預入",
+   "start_date": "2026-10-06",
+   "end_date": "2027-03-30",
+   "quota": "200億円（達し次第終了）",
+   "bank": "きらやか銀行 SBIさくらんぼ支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "金利マシマシ定期預金Ⅱ（7か月）",
+   "kind": "定期預金",
+   "term_months": 7,
+   "rate_pct": 1.8,
+   "rate_is_max": true,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "募集総額で基準1.0%～最大1.8%、満期時に上乗せ。3月預入",
+   "start_date": "2026-10-06",
+   "end_date": "2027-03-30",
+   "quota": "200億円（達し次第終了）",
+   "bank": "きらやか銀行 SBIさくらんぼ支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "SBIさくらんぼ支店 円普通預金",
+   "kind": "普通預金",
+   "term_months": null,
+   "rate_pct": 0.6,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": null,
+   "conditions": "ページ上部に記載の税引前金利。2026年10月30日に引き上げを案内",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "きらやか銀行 SBIさくらんぼ支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "よさこいおきゃく定期（スーパー定期＜単利型＞、よさこいおきゃく支店専用）",
+   "kind": "定期預金",
+   "term_months": 12,
+   "rate_pct": 0.57,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "お一人さま100万円まで。よさこいおきゃく支店の個人口座保有者が対象。インターネットバンキングからの預入のみ。2026年8月6日からの改定金利",
+   "start_date": "2026-08-06",
+   "end_date": null,
+   "quota": null,
+   "bank": "高知銀行 よさこいおきゃく支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "おきゃく定期（スーパー定期＜単利型＞、よさこいおきゃく支店専用）",
+   "kind": "定期預金",
+   "term_months": 12,
+   "rate_pct": 0.5,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "1口10万円以上。300万円未満と以上で同率。インターネットバンキングからの預入のみ。2026年8月6日からの改定金利",
+   "start_date": "2026-08-06",
+   "end_date": null,
+   "quota": null,
+   "bank": "高知銀行 よさこいおきゃく支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "おきゃく定期（スーパー定期＜複利型＞、よさこいおきゃく支店専用）",
+   "kind": "定期預金",
+   "term_months": 36,
+   "rate_pct": 0.6,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "1口10万円以上。300万円未満と以上で同率。6カ月毎複利。インターネットバンキングからの預入のみ。2026年8月6日からの改定金利",
+   "start_date": "2026-08-06",
+   "end_date": null,
+   "quota": null,
+   "bank": "高知銀行 よさこいおきゃく支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "おきゃく定期（スーパー定期＜複利型＞、よさこいおきゃく支店専用）",
+   "kind": "定期預金",
+   "term_months": 60,
+   "rate_pct": 0.75,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "1口10万円以上。300万円未満と以上で同率。6カ月毎複利。インターネットバンキングからの預入のみ。2026年8月6日からの改定金利",
+   "start_date": "2026-08-06",
+   "end_date": null,
+   "quota": null,
+   "bank": "高知銀行 よさこいおきゃく支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "HandyBank専用定期預金（スーパー定期）",
+   "kind": "定期預金",
+   "term_months": 12,
+   "rate_pct": 0.15,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 10000,
+   "conditions": "スーパー定期店頭表示金利に年0.15%上乗せ。HandyBank支店普通預金と登録済みひめぎんアプリが条件。窓口・ATM・IBでは預入不可",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "愛媛銀行 HandyBank支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "HandyBank専用定期預金（スーパー定期300）",
+   "kind": "定期預金",
+   "term_months": 12,
+   "rate_pct": 0.15,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 10000,
+   "conditions": "スーパー定期300店頭表示金利に年0.15%上乗せ。HandyBank支店普通預金と登録済みひめぎんアプリが条件。1,000万円以下",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "愛媛銀行 HandyBank支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "退職金専用定期預金（3か月）",
+   "kind": "定期預金",
+   "term_months": 3,
+   "rate_pct": 2.0,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 1000000,
+   "conditions": "一般企業や官公庁等を退職し退職金を受け取ってから1年以内の個人が対象。預入額は退職金受取額（税引後）以内。愛媛県内店舗のみ",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "愛媛銀行 HandyBank支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "ひめぎん相続定期預金（スーパー定期・6か月）",
+   "kind": "定期預金",
+   "term_months": 6,
+   "rate_pct": 0.395,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 1000000,
+   "conditions": "店頭表示金利に年0.395%上乗せ。相続による預金受取から2年以内の個人。相続資金受取額の範囲内",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "愛媛銀行 HandyBank支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "ひめぎん相続定期預金（スーパー定期・1年）",
+   "kind": "定期預金",
+   "term_months": 12,
+   "rate_pct": 0.15,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 1000000,
+   "conditions": "店頭表示金利に年0.150%上乗せ。相続による預金受取から2年以内の個人。相続資金受取額の範囲内",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "愛媛銀行 HandyBank支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "ひめぎん相続定期預金（スーパー定期・2年）",
+   "kind": "定期預金",
+   "term_months": 24,
+   "rate_pct": 0.15,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 1000000,
+   "conditions": "店頭表示金利に年0.150%上乗せ。相続による預金受取から2年以内の個人。相続資金受取額の範囲内",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "愛媛銀行 HandyBank支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "ひめぎん相続定期預金（スーパー定期・3年）",
+   "kind": "定期預金",
+   "term_months": 36,
+   "rate_pct": 0.25,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 1000000,
+   "conditions": "店頭表示金利に年0.250%上乗せ。相続による預金受取から2年以内の個人。相続資金受取額の範囲内",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "愛媛銀行 HandyBank支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "DanDan普通預金（通常金利）",
+   "kind": "普通預金",
+   "term_months": null,
+   "rate_pct": 0.5,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": null,
+   "conditions": "2026年10月1日時点の通常金利。キャンペーン終了後に適用。DanDanBANKアプリの個人顧客対象",
+   "start_date": "2026-10-01",
+   "end_date": null,
+   "quota": null,
+   "bank": "山陰合同銀行 DanDanBANK"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "夢プレミアム300（電話受付限定・キャンペーン）",
+   "kind": "定期預金",
+   "term_months": 12,
+   "rate_pct": 1.2,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": null,
+   "conditions": "夢ふくらむ支店取引者限定。電話受付のみ。1年もの元金自動継続式",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "大阪シティ信用金庫 夢ふくらむ支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "夢プレミアム（アプリ受付限定・キャンペーン）",
+   "kind": "定期預金",
+   "term_months": 12,
+   "rate_pct": 1.3,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": null,
+   "conditions": "夢ふくらむ支店取引者限定。アプリ申込のみ。1年もの元金自動継続式",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "大阪シティ信用金庫 夢ふくらむ支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "スーパー定期預金（とよしんインターネット支店専用）",
+   "kind": "定期預金",
+   "term_months": 1,
+   "rate_pct": 0.5,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": null,
+   "conditions": "インターネット支店専用定期預金。2026年10月1日より適用",
+   "start_date": "2026-10-01",
+   "end_date": null,
+   "quota": null,
+   "bank": "豊田信用金庫 とよしんインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "スーパー定期預金（とよしんインターネット支店専用）",
+   "kind": "定期預金",
+   "term_months": 3,
+   "rate_pct": 0.5,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": null,
+   "conditions": "インターネット支店専用定期預金。2026年10月1日より適用",
+   "start_date": "2026-10-01",
+   "end_date": null,
+   "quota": null,
+   "bank": "豊田信用金庫 とよしんインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "スーパー定期預金（とよしんインターネット支店専用）",
+   "kind": "定期預金",
+   "term_months": 6,
+   "rate_pct": 0.5,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": null,
+   "conditions": "インターネット支店専用定期預金。2026年10月1日より適用",
+   "start_date": "2026-10-01",
+   "end_date": null,
+   "quota": null,
+   "bank": "豊田信用金庫 とよしんインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "スーパー定期預金（とよしんインターネット支店専用）",
+   "kind": "定期預金",
+   "term_months": 12,
+   "rate_pct": 0.5,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": null,
+   "conditions": "インターネット支店専用定期預金。2026年10月1日より適用",
+   "start_date": "2026-10-01",
+   "end_date": null,
+   "quota": null,
+   "bank": "豊田信用金庫 とよしんインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "スーパー定期預金（とよしんインターネット支店専用）",
+   "kind": "定期預金",
+   "term_months": 36,
+   "rate_pct": 0.8,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": null,
+   "conditions": "インターネット支店専用定期預金。2026年10月1日より適用",
+   "start_date": "2026-10-01",
+   "end_date": null,
+   "quota": null,
+   "bank": "豊田信用金庫 とよしんインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "スーパー定期預金（とよしんインターネット支店専用）",
+   "kind": "定期預金",
+   "term_months": 60,
+   "rate_pct": 1.0,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": null,
+   "conditions": "インターネット支店専用定期預金。2026年10月1日より適用",
+   "start_date": "2026-10-01",
+   "end_date": null,
+   "quota": null,
+   "bank": "豊田信用金庫 とよしんインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "ばんしん夢みらい特別金利定期預金（第33回）",
+   "kind": "定期預金",
+   "term_months": 12,
+   "rate_pct": 1.3,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 2000000,
+   "conditions": "夢みらい支店専用・インターネットバンキングで預入・200万円以上1,000万円以内・自動満期解約方式",
+   "start_date": "2026-10-13",
+   "end_date": "2026-12-30",
+   "quota": null,
+   "bank": "播州信用金庫 夢みらい支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "ばんしん夢みらい特別金利定期預金（第33回）",
+   "kind": "定期預金",
+   "term_months": 36,
+   "rate_pct": 1.65,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 2000000,
+   "conditions": "夢みらい支店専用・インターネットバンキングで預入・200万円以上1,000万円以内・自動満期解約方式",
+   "start_date": "2026-10-13",
+   "end_date": "2026-12-30",
+   "quota": null,
+   "bank": "播州信用金庫 夢みらい支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "コンティニューボンド２０２６ 1年",
+   "kind": "定期預金",
+   "term_months": 12,
+   "rate_pct": 1.55,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 3000000,
+   "conditions": "おかしんインターネット支店限定・インターネットバンキングのみ・募集総額200億円で早期終了あり・元利継続",
+   "start_date": "2026-11-02",
+   "end_date": "2027-03-31",
+   "quota": "合計200億円",
+   "bank": "岡崎信用金庫 おかしんインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "コンティニューボンド２０２６ 2年",
+   "kind": "定期預金",
+   "term_months": 24,
+   "rate_pct": 1.85,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 3000000,
+   "conditions": "おかしんインターネット支店限定・インターネットバンキングのみ・中間利払あり・募集総額200億円で早期終了あり・元利継続",
+   "start_date": "2026-11-02",
+   "end_date": "2027-03-31",
+   "quota": "合計200億円",
+   "bank": "岡崎信用金庫 おかしんインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "new",
+  "offer": {
+   "product": "コンティニューボンド２０２６ 3年",
+   "kind": "定期預金",
+   "term_months": 36,
+   "rate_pct": 1.9,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 3000000,
+   "conditions": "おかしんインターネット支店限定・インターネットバンキングのみ・募集総額200億円で早期終了あり・元利継続",
+   "start_date": "2026-11-02",
+   "end_date": "2027-03-31",
+   "quota": "合計200億円",
+   "bank": "岡崎信用金庫 おかしんインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "auじぶん銀行|秋の円外貨セット定期応援キャンペーン（豪ドル1年・円50外貨50）|12"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "清水銀行 清水みなとインターネット支店|清水みなとインターネット支店専用定期預金（Bon Voyage）3年もの|36"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "auじぶん銀行|円定期預金|3"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "auじぶん銀行|円定期預金|36"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "auじぶん銀行|円普通預金（プレミアム金利優遇適用時）|None"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "auじぶん銀行|円定期預金|60"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "きらやか銀行 SBIさくらんぼ支店|金利マシマシ定期預金Ⅱ|11"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "豊田信用金庫 とよしんインターネット支店|とよしんインターネット支店専用 スーパー定期預金|36"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "あおぞら銀行 BANK|BANK The 定期 2年|24"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "高知銀行 よさこいおきゃく支店|よさこいおきゃく定期（スーパー定期単利型）|12"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "あおぞら銀行 BANK|BANK 円普通預金 (100万円以下)|None"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "auじぶん銀行|秋の円外貨セット定期応援キャンペーン（豪ドル1年・円25外貨75）|12"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "播州信用金庫 夢みらい支店|ばんしん夢みらい特別金利定期預金（3年）|36"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "GMOあおぞらネット銀行|円定期預金 2年以上3年未満|24"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "auじぶん銀行|円定期預金|12"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "オリックス銀行|eダイレクト定期預金 優遇金利プログラム（5年）|60"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "岡崎信用金庫 おかしんインターネット支店|コンティニューボンド２０２６（2年）|24"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "オリックス銀行|eダイレクト定期預金 優遇金利プログラム（2年）|24"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "岡崎信用金庫 おかしんインターネット支店|コンティニューボンド２０２６（3年）|36"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "auじぶん銀行|円定期預金|24"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "高知銀行 よさこいおきゃく支店|おきゃく定期（スーパー定期複利型）|36"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "あおぞら銀行 BANK|BANK The 定期 6ヶ月|6"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "高知銀行 よさこいおきゃく支店|おきゃく定期（スーパー定期）|12"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "大阪シティ信用金庫 夢ふくらむ支店|夢プレミアム300（電話受付限定・スーパー定期1年もの）|12"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "auじぶん銀行|プレミアム金利円定期預金15年タイプ|12"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "大阪シティ信用金庫 夢ふくらむ支店|夢プレミアム（アプリ受付限定・スーパー定期1年もの）|12"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "あおぞら銀行 BANK|BANK The 定期 1年|12"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "auじぶん銀行|円定期預金|6"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "SBJ銀行|1週間（なのか）で増える|None"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "清水銀行 清水みなとインターネット支店|清水みなとインターネット支店専用定期預金（Bon Voyage）1年もの|12"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "auじぶん銀行|秋の円外貨セット定期応援キャンペーン（豪ドル1年・円75外貨25）|12"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "SBJ銀行|好金利で貯める|None"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "あおぞら銀行 BANK|BANK The 定期 3年|36"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "オリックス銀行|ダイレクト預金 スーパー定期300（5年もの）|60"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "豊田信用金庫 とよしんインターネット支店|とよしんインターネット支店専用 スーパー定期預金|3"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "あおぞら銀行 BANK|BANK 円普通預金 (100万円超)|None"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "播州信用金庫 夢みらい支店|ばんしん夢みらい特別金利定期預金（1年）|12"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "あおぞら銀行 BANK|BANK The 定期 5年|60"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "GMOあおぞらネット銀行|円定期預金 3年もの|36"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "豊田信用金庫 とよしんインターネット支店|とよしんインターネット支店専用 スーパー定期預金|60"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "オリックス銀行|eダイレクト定期預金 優遇金利プログラム（1年）|12"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "岡崎信用金庫 おかしんインターネット支店|コンティニューボンド２０２６（1年）|12"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "きらやか銀行 SBIさくらんぼ支店|SBIさくらんぼ支店 普通預金|None"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "高知銀行 よさこいおきゃく支店|おきゃく定期（スーパー定期複利型）|60"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "GMOあおぞらネット銀行|円定期預金 2年もの|24"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "豊田信用金庫 とよしんインターネット支店|とよしんインターネット支店専用 スーパー定期預金|6"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "オリックス銀行|eダイレクト定期預金 スーパー定期300（7年）|84"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "豊田信用金庫 とよしんインターネット支店|とよしんインターネット支店専用 スーパー定期預金|12"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "愛媛銀行 HandyBank支店|HandyBank専用定期預金|12"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "豊田信用金庫 とよしんインターネット支店|とよしんインターネット支店専用 スーパー定期預金|1"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "清水銀行 清水みなとインターネット支店|清水みなとインターネット支店専用定期預金（Bon Voyage）5年もの|60"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "auじぶん銀行|円定期預金|1"
+ },
+ {
+  "date": "2026-11-03",
+  "type": "gone",
+  "key": "オリックス銀行|ダイレクト預金 スーパー定期300（3年もの）|36"
  }
 ]
