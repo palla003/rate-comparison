@@ -1,0 +1,6 @@
+anthropic>=2.4
+pydantic>=2
+requests
+beautifulsoup4
+pyyaml
+brotli>=1.2

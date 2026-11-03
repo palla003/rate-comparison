@@ -1,0 +1,55 @@
+# 監視する銀行ページの一覧。
+#   name: 表示名
+#   url: 金利・キャンペーンが載っている公式ページ(監視に使う)
+#   apply_url: 申込リンク。アフィリエイト(A8.netなど)に登録したら、ここを広告リンクに差し替える。空なら url を使う。
+#   ad: true なら申込リンクを広告(PR)として表示する。ステマ規制により広告リンクには表示が必須。
+# ページが変わって読めなくなった場合は、通知が来るので url を直す。
+# 自動取得を拒否しているサイト(403やrobots.txtで禁止)は載せない。ドコモSMTBネット銀行は403のため外した。
+
+sources:
+  - name: SBI新生銀行
+    url: https://www.sbishinseibank.co.jp/retail/yen/yen_teiki.html
+  - name: オリックス銀行
+    url: https://www.orixbank.co.jp/personal/deposit/
+  - name: auじぶん銀行
+    url: https://www.jibunbank.co.jp/products/yen_deposit/
+  - name: 楽天銀行
+    url: https://www.rakuten-bank.co.jp/interest/
+  - name: SBJ銀行
+    url: https://www.sbjbank.co.jp/
+  - name: UI銀行
+    url: https://www.uibank.co.jp/
+  - name: あおぞら銀行 BANK
+    url: https://www.aozorabank.co.jp/bank/kinri/
+  - name: GMOあおぞらネット銀行
+    url: https://gmo-aozora.com/priv/contents/interest.html
+  - name: 静岡銀行 しずぎんインターネット支店
+    url: https://shizugin.net/campaign/
+  - name: スルガ銀行 Dバンク支店
+    url: https://www.surugabank.co.jp/d-bank/
+  - name: トマト銀行 ももたろう支店
+    url: https://www.tomatobank.co.jp/momotaro/index.html
+  - name: 清水銀行 清水みなとインターネット支店
+    url: https://www.shimizubank.co.jp/netbranch/
+  - name: きらやか銀行 SBIさくらんぼ支店
+    url: https://www.kirayaka.co.jp/netkirayaka/
+  - name: 高知銀行 よさこいおきゃく支店
+    url: https://www.kochi-bank.co.jp/yosakoi-okyaku/index.html
+  - name: 愛媛銀行 HandyBank支店
+    url: https://www.himegin.co.jp/personal/kouza/handybank/
+  - name: 山陰合同銀行 DanDanBANK
+    url: https://www.gogin.co.jp/dandanbank/
+  - name: 大阪シティ信用金庫 夢ふくらむ支店
+    url: https://www.osaka-city-shinkin.co.jp/kojin/yume_fuku/index.html
+  - name: 豊田信用金庫 とよしんインターネット支店
+    url: https://www.toyoshin.co.jp/netbranch/
+  - name: 豊橋信用金庫 インターネット支店
+    url: https://www.toyo-shin.co.jp/net/
+  - name: しずおか焼津信用金庫 しずしんインターネット支店
+    url: https://www.shizuokayaizu-shinkin.co.jp/shizunet/
+  - name: 豊川信用金庫 インターネット支店
+    url: https://www.kawa-shin.co.jp/koko-net/
+  - name: 播州信用金庫 夢みらい支店
+    url: https://www.shinkin.co.jp/banshin/yumemirai/index.html
+  - name: 岡崎信用金庫 おかしんインターネット支店
+    url: https://www.okashin.co.jp/internetstore/
