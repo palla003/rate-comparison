@@ -14,12 +14,12 @@ SITE_URL = os.environ.get("SITE_URL", "").rstrip("/")
 SITE_NAME = os.environ.get("SITE_NAME", "定期預金キャンペーン金利 毎日更新")
 
 BUCKETS = [  # (見出し, アンカー, 判定)
-    ("普通預金", "futsu", lambda m, k: k == "普通預金"),
     ("1〜3か月", "m3", lambda m, k: m is not None and m <= 3),
     ("4〜6か月", "m6", lambda m, k: m is not None and 4 <= m <= 6),
     ("7か月〜1年", "y1", lambda m, k: m is not None and 7 <= m <= 12),
     ("2〜3年", "y3", lambda m, k: m is not None and 13 <= m <= 36),
     ("4年以上", "y5", lambda m, k: m is not None and m >= 37),
+    ("普通預金", "futsu", lambda m, k: k == "普通預金"),
 ]
 
 e = html.escape
@@ -94,7 +94,7 @@ body{{margin:0;background:var(--bg);color:var(--fg);font:15px/1.6 system-ui,-app
 main{{max-width:1000px;margin:auto;padding:16px}}
 h1{{font-size:1.5em;margin:.4em 0}} h2{{font-size:1.15em;margin-top:2em;border-left:4px solid var(--acc);padding-left:8px}}
 .sub{{color:var(--sub);font-size:.88em}} .scroll{{overflow-x:auto}}
-table{{border-collapse:collapse;width:100%;min-width:640px}} th,td{{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}}
+table{{border-collapse:collapse;width:100%;min-width:640px}} td:last-child,td:nth-child(5),td.rate{{white-space:nowrap}} th,td{{border-bottom:1px solid var(--line);padding:8px 6px;text-align:left;vertical-align:top}}
 th{{font-size:.85em;color:var(--sub)}} .rate{{font-weight:700;font-size:1.15em;color:var(--acc);white-space:nowrap}}
 .tag{{display:inline-block;background:var(--tag);border-radius:4px;padding:0 5px;font-size:.75em;margin-left:4px}}
 .tag.new{{color:#b54708}} .pr{{font-size:.7em;border:1px solid var(--sub);border-radius:3px;padding:0 3px;margin-left:4px}}
