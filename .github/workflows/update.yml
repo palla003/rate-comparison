@@ -33,6 +33,9 @@ jobs:
       RAKUTEN_APP_ID: ${{ secrets.RAKUTEN_APP_ID }}
       RAKUTEN_ACCESS_KEY: ${{ secrets.RAKUTEN_ACCESS_KEY }}
       RAKUTEN_AFFILIATE_ID: ${{ secrets.RAKUTEN_AFFILIATE_ID }}
+      HATENA_ID: ${{ secrets.HATENA_ID }}
+      HATENA_BLOG_ID: ${{ secrets.HATENA_BLOG_ID }}
+      HATENA_API_KEY: ${{ secrets.HATENA_API_KEY }}
       SITE_URL: ${{ vars.SITE_URL }}
       CAMPAIGN_MODEL: ${{ vars.CAMPAIGN_MODEL || 'claude-haiku-5-5' }}
     steps:
@@ -70,6 +73,11 @@ jobs:
         continue-on-error: true
         run: python post_x.py
 
+      - name: はてなブログの記事を更新
+        id: hatena
+        continue-on-error: true
+        run: python hatena/publish.py
+
       - name: data/ を保存
         if: always()
         run: |
@@ -82,7 +90,7 @@ jobs:
           fi
 
       - name: 異常があれば失敗にする
-        if: steps.monitor.outcome == 'failure' || steps.post.outcome == 'failure' || steps.furusato.outcome == 'failure'
+        if: steps.monitor.outcome == 'failure' || steps.post.outcome == 'failure' || steps.furusato.outcome == 'failure' || steps.hatena.outcome == 'failure'
         run: |
-          echo "::error::monitor=${{ steps.monitor.outcome }} furusato=${{ steps.furusato.outcome }} post=${{ steps.post.outcome }}。ログとDiscordの通知を確認してください"
+          echo "::error::monitor=${{ steps.monitor.outcome }} furusato=${{ steps.furusato.outcome }} hatena=${{ steps.hatena.outcome }} post=${{ steps.post.outcome }}。ログとDiscordの通知を確認してください"
           exit 1
