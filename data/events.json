@@ -2666,5 +2666,467 @@
    "bank": "あおぞら銀行 BANK"
   },
   "prev": 0.75
+ },
+ {
+  "date": "2026-11-05",
+  "type": "new",
+  "offer": {
+   "product": "デビュー応援定期預金（1年もの）",
+   "kind": "定期預金",
+   "term_months": 12,
+   "rate_pct": 1.9,
+   "rate_is_max": false,
+   "new_customer_only": true,
+   "min_amount_yen": 10000,
+   "conditions": "2026年11月1日以降の新規口座開設者限定、口座開設の翌々月末までの預入が対象、上限1億円",
+   "start_date": null,
+   "end_date": null,
+   "quota": "預入上限1億円（特典対象）",
+   "bank": "auじぶん銀行"
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "type": "new",
+  "offer": {
+   "product": "プレミアム金利円定期預金15年タイプ",
+   "kind": "定期預金",
+   "term_months": 12,
+   "rate_pct": 3.3,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "当初1年、満期延長で最長15年。中途解約不可。10万円単位",
+   "start_date": "2026-11-11",
+   "end_date": "2026-11-10",
+   "quota": null,
+   "bank": "auじぶん銀行"
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "type": "new",
+  "offer": {
+   "product": "円定期預金（1ヶ月）",
+   "kind": "定期預金",
+   "term_months": 1,
+   "rate_pct": 0.63,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 10000,
+   "conditions": "10,000円以上1円単位、インターネットバンキングで預入、固定金利",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "auじぶん銀行"
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "type": "new",
+  "offer": {
+   "product": "円定期預金（3ヶ月）",
+   "kind": "定期預金",
+   "term_months": 3,
+   "rate_pct": 0.5,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 10000,
+   "conditions": "10,000円以上1円単位、インターネットバンキングで預入、固定金利",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "auじぶん銀行"
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "type": "new",
+  "offer": {
+   "product": "円定期預金（6ヶ月）",
+   "kind": "定期預金",
+   "term_months": 6,
+   "rate_pct": 1.4,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 10000,
+   "conditions": "10,000円以上1円単位、インターネットバンキングで預入、固定金利",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "auじぶん銀行"
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "type": "new",
+  "offer": {
+   "product": "円定期預金（1年）",
+   "kind": "定期預金",
+   "term_months": 12,
+   "rate_pct": 0.63,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 10000,
+   "conditions": "10,000円以上1円単位、インターネットバンキングで預入、固定金利",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "auじぶん銀行"
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "type": "new",
+  "offer": {
+   "product": "円定期預金（2年）",
+   "kind": "定期預金",
+   "term_months": 24,
+   "rate_pct": 0.8,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 10000,
+   "conditions": "10,000円以上1円単位、インターネットバンキングで預入、固定金利",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "auじぶん銀行"
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "type": "new",
+  "offer": {
+   "product": "円定期預金（3年）",
+   "kind": "定期預金",
+   "term_months": 36,
+   "rate_pct": 1.0,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 10000,
+   "conditions": "10,000円以上1円単位、インターネットバンキングで預入、固定金利",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "auじぶん銀行"
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "type": "new",
+  "offer": {
+   "product": "円定期預金（5年）",
+   "kind": "定期預金",
+   "term_months": 60,
+   "rate_pct": 1.8,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 10000,
+   "conditions": "10,000円以上1円単位、インターネットバンキングで預入、固定金利",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "auじぶん銀行"
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "type": "new",
+  "offer": {
+   "product": "円普通預金 プレミアム金利優遇（通常0.510%＋上乗せ0.340%）",
+   "kind": "普通預金",
+   "term_months": null,
+   "rate_pct": 0.85,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": null,
+   "conditions": "プレミアム金利優遇の適用条件を満たす場合の合計金利。毎月判定、条件は各プログラムで要確認",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "auじぶん銀行"
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "type": "new",
+  "offer": {
+   "product": "好金利で貯める",
+   "kind": "定期預金",
+   "term_months": null,
+   "rate_pct": 1.85,
+   "rate_is_max": true,
+   "new_customer_only": false,
+   "min_amount_yen": null,
+   "conditions": "すべてのお客さま対象。適用基準金利は端数期間切り捨て後の定型方式基準金利、期間の記載なし",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "SBJ銀行"
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "type": "new",
+  "offer": {
+   "product": "1週間（なのか）で増える",
+   "kind": "定期預金",
+   "term_months": null,
+   "rate_pct": 0.5,
+   "rate_is_max": true,
+   "new_customer_only": false,
+   "min_amount_yen": null,
+   "conditions": "1週間（7日）で満期となる超短期定期預金。金利は最大表記",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "SBJ銀行"
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "type": "up",
+  "offer": {
+   "product": "円普通預金（BANK）",
+   "kind": "普通預金",
+   "term_months": null,
+   "rate_pct": 1.2,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 1,
+   "conditions": "預入金額100万円以下の部分の変動金利。BANK口座限定",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "あおぞら銀行 BANK"
+  },
+  "prev": 0.75
+ },
+ {
+  "date": "2026-11-05",
+  "type": "new",
+  "offer": {
+   "product": "清水みなとインターネット支店専用定期預金（Bon Voyage）",
+   "kind": "定期預金",
+   "term_months": 1,
+   "rate_pct": 0.425,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "清水みなとインターネット支店の普通預金口座が必要。新規資金。10万円以上。個人限定。店頭不可",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "清水銀行 清水みなとインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "type": "new",
+  "offer": {
+   "product": "清水みなとインターネット支店専用定期預金（Bon Voyage）",
+   "kind": "定期預金",
+   "term_months": 2,
+   "rate_pct": 0.425,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "清水みなとインターネット支店の普通預金口座が必要。新規資金。10万円以上。個人限定。店頭不可",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "清水銀行 清水みなとインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "type": "new",
+  "offer": {
+   "product": "清水みなとインターネット支店専用定期預金（Bon Voyage）",
+   "kind": "定期預金",
+   "term_months": 3,
+   "rate_pct": 0.425,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "清水みなとインターネット支店の普通預金口座が必要。新規資金。10万円以上。個人限定。店頭不可",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "清水銀行 清水みなとインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "type": "new",
+  "offer": {
+   "product": "清水みなとインターネット支店専用定期預金（Bon Voyage）",
+   "kind": "定期預金",
+   "term_months": 6,
+   "rate_pct": 0.425,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "清水みなとインターネット支店の普通預金口座が必要。新規資金。10万円以上。個人限定。店頭不可",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "清水銀行 清水みなとインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "type": "new",
+  "offer": {
+   "product": "清水みなとインターネット支店専用定期預金（Bon Voyage）",
+   "kind": "定期預金",
+   "term_months": 12,
+   "rate_pct": 1.039,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "口座開設必須。新規資金。10万円以上。個人限定。1・3・5年ものに限り金利1.039%",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "清水銀行 清水みなとインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "type": "new",
+  "offer": {
+   "product": "清水みなとインターネット支店専用定期預金（Bon Voyage）",
+   "kind": "定期預金",
+   "term_months": 24,
+   "rate_pct": 0.5,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "口座開設必須。新規資金。10万円以上。個人限定。店頭不可",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "清水銀行 清水みなとインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "type": "new",
+  "offer": {
+   "product": "清水みなとインターネット支店専用定期預金（Bon Voyage）",
+   "kind": "定期預金",
+   "term_months": 36,
+   "rate_pct": 1.039,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "口座開設必須。新規資金。10万円以上。個人限定。1・3・5年ものに限り金利1.039%",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "清水銀行 清水みなとインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "type": "new",
+  "offer": {
+   "product": "清水みなとインターネット支店専用定期預金（Bon Voyage）",
+   "kind": "定期預金",
+   "term_months": 48,
+   "rate_pct": 0.6,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "口座開設必須。新規資金。10万円以上。個人限定。店頭不可",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "清水銀行 清水みなとインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "type": "new",
+  "offer": {
+   "product": "清水みなとインターネット支店専用定期預金（Bon Voyage）",
+   "kind": "定期預金",
+   "term_months": 60,
+   "rate_pct": 1.039,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "口座開設必須。新規資金。10万円以上。個人限定。1・3・5年ものに限り金利1.039%",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "清水銀行 清水みなとインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-05",
+  "type": "gone",
+  "key": "SBJ銀行|1週間（なのか）定期預金|None"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "gone",
+  "key": "清水銀行 清水みなとインターネット支店|清水みなとインターネット支店専用定期預金（Bon Voyage）3年|36"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "gone",
+  "key": "清水銀行 清水みなとインターネット支店|清水みなとインターネット支店 普通預金|None"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "gone",
+  "key": "清水銀行 清水みなとインターネット支店|清水みなとインターネット支店専用定期預金（Bon Voyage）1年|12"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "gone",
+  "key": "清水銀行 清水みなとインターネット支店|清水みなとインターネット支店専用定期預金（Bon Voyage）2年|24"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "gone",
+  "key": "清水銀行 清水みなとインターネット支店|清水みなとインターネット支店専用定期預金（Bon Voyage）6ヶ月|6"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "gone",
+  "key": "清水銀行 清水みなとインターネット支店|清水みなとインターネット支店専用定期預金（Bon Voyage）2ヶ月|2"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "gone",
+  "key": "清水銀行 清水みなとインターネット支店|清水みなとインターネット支店専用定期預金（Bon Voyage）4年|48"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "gone",
+  "key": "auじぶん銀行|デビュー応援定期預金（1年もの円定期預金）|12"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "gone",
+  "key": "清水銀行 清水みなとインターネット支店|清水みなとインターネット支店専用定期預金（Bon Voyage）3ヶ月|3"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "gone",
+  "key": "清水銀行 清水みなとインターネット支店|清水みなとインターネット支店専用定期預金（Bon Voyage）1ヶ月|1"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "gone",
+  "key": "清水銀行 清水みなとインターネット支店|清水みなとインターネット支店専用定期預金（Bon Voyage）5年|60"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "gone",
+  "key": "SBJ銀行|好金利で貯める（定期預金）|None"
  }
 ]
