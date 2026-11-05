@@ -1,0 +1,39 @@
+# 補助金を集める自治体。domain は公式サイトのドメイン(検索をこのドメインに絞る)。
+# ドメインが間違っていると「ページが見つからない」と通知されるので、そのときに直す。
+prefecture: 神奈川県
+slug: kanagawa
+municipalities:
+  - {name: 神奈川県, domain: pref.kanagawa.jp}
+  - {name: 横浜市, domain: city.yokohama.lg.jp}
+  - {name: 川崎市, domain: city.kawasaki.jp}
+  - {name: 相模原市, domain: city.sagamihara.kanagawa.jp}
+  - {name: 横須賀市, domain: city.yokosuka.kanagawa.jp}
+  - {name: 平塚市, domain: city.hiratsuka.kanagawa.jp}
+  - {name: 鎌倉市, domain: city.kamakura.kanagawa.jp}
+  - {name: 藤沢市, domain: city.fujisawa.kanagawa.jp}
+  - {name: 小田原市, domain: city.odawara.kanagawa.jp}
+  - {name: 茅ヶ崎市, domain: city.chigasaki.kanagawa.jp}
+  - {name: 逗子市, domain: city.zushi.kanagawa.jp}
+  - {name: 三浦市, domain: city.miura.kanagawa.jp}
+  - {name: 秦野市, domain: city.hadano.kanagawa.jp}
+  - {name: 厚木市, domain: city.atsugi.kanagawa.jp}
+  - {name: 大和市, domain: city.yamato.lg.jp}
+  - {name: 伊勢原市, domain: city.isehara.kanagawa.jp}
+  - {name: 海老名市, domain: city.ebina.kanagawa.jp}
+  - {name: 座間市, domain: city.zama.kanagawa.jp}
+  - {name: 南足柄市, domain: city.minamiashigara.kanagawa.jp}
+  - {name: 綾瀬市, domain: city.ayase.kanagawa.jp}
+  - {name: 葉山町, domain: town.hayama.lg.jp}
+  - {name: 寒川町, domain: town.samukawa.kanagawa.jp}
+  - {name: 大磯町, domain: town.oiso.kanagawa.jp}
+  - {name: 二宮町, domain: town.ninomiya.kanagawa.jp}
+  - {name: 中井町, domain: town.nakai.kanagawa.jp}
+  - {name: 大井町, domain: town.oi.kanagawa.jp}
+  - {name: 松田町, domain: town.matsuda.kanagawa.jp}
+  - {name: 山北町, domain: town.yamakita.kanagawa.jp}
+  - {name: 開成町, domain: town.kaisei.kanagawa.jp}
+  - {name: 箱根町, domain: town.hakone.kanagawa.jp}
+  - {name: 真鶴町, domain: town.manazuru.kanagawa.jp}
+  - {name: 湯河原町, domain: town.yugawara.kanagawa.jp}
+  - {name: 愛川町, domain: town.aikawa.kanagawa.jp}
+  - {name: 清川村, domain: vill.kiyokawa.kanagawa.jp}

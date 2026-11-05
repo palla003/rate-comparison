@@ -56,8 +56,16 @@ jobs:
         continue-on-error: true
         run: python furusato/collect.py
 
+      - name: 補助金を集める
+        id: hojokin
+        continue-on-error: true
+        run: |
+          python hojokin/discover.py
+          python hojokin/collect.py
+
       - name: サイト作成
         run: |
+          python hojokin/build.py
           python build_site.py
           python furusato/build.py
       - uses: actions/configure-pages@v5
@@ -90,7 +98,7 @@ jobs:
           fi
 
       - name: 異常があれば失敗にする
-        if: steps.monitor.outcome == 'failure' || steps.post.outcome == 'failure' || steps.furusato.outcome == 'failure' || steps.hatena.outcome == 'failure'
+        if: steps.monitor.outcome == 'failure' || steps.post.outcome == 'failure' || steps.furusato.outcome == 'failure' || steps.hatena.outcome == 'failure' || steps.hojokin.outcome == 'failure'
         run: |
-          echo "::error::monitor=${{ steps.monitor.outcome }} furusato=${{ steps.furusato.outcome }} hatena=${{ steps.hatena.outcome }} post=${{ steps.post.outcome }}。ログとDiscordの通知を確認してください"
+          echo "::error::monitor=${{ steps.monitor.outcome }} furusato=${{ steps.furusato.outcome }} hatena=${{ steps.hatena.outcome }} hojokin=${{ steps.hojokin.outcome }} post=${{ steps.post.outcome }}。ログとDiscordの通知を確認してください"
           exit 1
