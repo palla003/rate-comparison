@@ -144,6 +144,79 @@ def furusato_article():
             "categories": ["ふるさと納税"], "body": "\n".join(head + md + tail)}
 
 
+# ---- 記事: 補助金(分野ごとに1本) -----------------------------------------------------
+HOJO_ORDER = ["リフォーム", "省エネ・断熱", "太陽光・蓄電池", "耐震", "ブロック塀", "緑化・雨水", "浄化槽・下水",
+              "空き家", "移住・住宅取得", "車・充電", "防災", "その他"]
+HOJO_TITLE = {"リフォーム": "住宅リフォーム", "省エネ・断熱": "省エネ・断熱リフォーム", "太陽光・蓄電池": "太陽光発電・蓄電池",
+              "耐震": "耐震診断・耐震改修", "ブロック塀": "ブロック塀撤去", "緑化・雨水": "生垣・緑化・雨水タンク",
+              "浄化槽・下水": "浄化槽・下水道接続", "空き家": "空き家改修", "移住・住宅取得": "移住・住宅取得",
+              "車・充電": "電気自動車・V2H", "防災": "感震ブレーカーなど防災", "その他": "住まいのその他"}
+
+
+def yen(n):
+    return f"{n / 10000:,.0f}万円" if n >= 10000 and n % 10000 == 0 else f"{n:,}円"
+
+
+def hojokin_articles():
+    import yaml
+    p = REPO / "data" / "hojokin.json"
+    if not p.exists():
+        return []
+    conf = yaml.safe_load((REPO / "hojokin" / "municipalities.yaml").read_text(encoding="utf-8"))
+    ads = yaml.safe_load((REPO / "hojokin" / "ads.yaml").read_text(encoding="utf-8")) or {}
+    pref, slug = conf["prefecture"], conf["slug"]
+    st = json.loads(p.read_text(encoding="utf-8"))
+    today = dt.datetime.now(JST).date().isoformat()
+    by_cat, seen = {}, set()
+    for pg in st["pages"].values():
+        for s in pg.get("subsidies", []):
+            key = (pg["municipality"], s["name"])
+            if key in seen or s["status"] in ("受付終了", "予算到達") or (s.get("deadline") and s["deadline"] < today):
+                continue
+            seen.add(key)
+            by_cat.setdefault(s["category"], []).append(s | {"municipality": pg["municipality"], "url": pg["url"]})
+    rank = {"受付中": 0, "受付前": 1, "不明": 2}
+    out = []
+    for cat in HOJO_ORDER:
+        items = sorted(by_cat.get(cat, []), key=lambda s: (s["municipality"] != pref, s["municipality"],
+                                                           rank.get(s["status"], 9)))
+        if not items:
+            continue
+        name = HOJO_TITLE[cat]
+        ad = ads.get(cat) if isinstance(ads.get(cat), dict) and ads[cat].get("url") else None
+        md = []
+        if ad:
+            md.append("※この記事には広告(アフィリエイトリンク)を含みます。補助金の掲載や順番には影響しません。\n")
+        open_n = sum(1 for s in items if s["status"] == "受付中")
+        md.append(f"**{jdate(st['generated_at'])} 時点**で、{pref}と県内の市町村が出している{name}の補助金・助成金は"
+                  f"**{len(items)}件**(うち受付中と確認できたもの{open_n}件)です。各自治体の公式ページを毎日読んで更新しています。\n")
+        if ad:
+            md.append(f"工事の費用感を先に知りたい方は、[{ad['label']}]({ad['url']})で見積もりを比べられます。\n")
+        md.append("[:contents]\n")
+        cur = None
+        for s in items:
+            if s["municipality"] != cur:
+                cur = s["municipality"]
+                md.append(f"## {cur}\n")
+            dl = dt.date.fromisoformat(s["deadline"]) if s.get("deadline") else None
+            lines = [f"### {s['name']}\n",
+                     f"- 補助額: {cell(s['amount'])}" + (f"(上限{yen(s['max_yen'])})" if s.get("max_yen") and yen(s["max_yen"]) not in s["amount"] else ""),
+                     f"- 対象: {cell(s['what'])}。{cell(s['who'])}",
+                     f"- 受付: {s['status']}" + (f"、{dl.year}年{dl.month}月{dl.day}日まで" if dl else ""),
+                     ]
+            if s["before_work"]:
+                lines.append("- **工事・購入の前に申請が必要です**")
+            lines.append(f"- 公式ページ: [{cur}のページ]({s['url']})\n")
+            md += lines
+        md.append("## この記事について\n")
+        md.append("各自治体の公式ページを機械で読み取って作っています。予算に達して締め切られることもあるので、"
+                  "申請の前に必ず公式ページで条件をご確認ください。多くの制度は、工事や購入の前に申請が必要です。\n")
+        out.append({"slug": f"hojokin-{slug}-{HOJO_ORDER.index(cat)}",
+                    "title": f"{pref}の{name}補助金まとめ【毎日更新】",
+                    "categories": ["補助金", pref, cat], "body": "\n".join(md)})
+    return out
+
+
 # ---- 投稿 ------------------------------------------------------------------------
 def entry_xml(a) -> bytes:
     cats = "".join(f'<category term="{escape(c)}" />' for c in a["categories"])
@@ -164,7 +237,7 @@ def main() -> int:
     hdr = {"Content-Type": "application/xml; charset=utf-8"}
     state = json.loads(STATE.read_text(encoding="utf-8")) if STATE.exists() else {}
     failed = 0
-    for a in filter(None, [teiki_article(), furusato_article()]):
+    for a in filter(None, [teiki_article(), furusato_article(), *hojokin_articles()]):
         rec = state.get(a["slug"], {})
         digest = hashlib.sha256(entry_xml(a)).hexdigest()
         if rec.get("hash") == digest:
