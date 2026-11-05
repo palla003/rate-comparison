@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-05T13:41+09:00",
+ "generated_at": "2026-11-05T15:43+09:00",
  "pages": {
   "https://www.pref.kanagawa.jp/docs/ap4/cnt/f300183/shouenekaishu.html": {
    "municipality": "神奈川県",
@@ -3359,6 +3359,210 @@
    ],
    "error": null
   },
+  "https://www.city.ayase.kanagawa.jp/soshiki/kankyohozenka/zumai/1/24031.html": {
+   "municipality": "綾瀬市",
+   "url": "https://www.city.ayase.kanagawa.jp/soshiki/kankyohozenka/zumai/1/24031.html",
+   "hash": "cfa21b7955e95d6b6593f0eb659aabb03c6928c24ed9c58635650af3b99f899f",
+   "read_on": "2026-11-05",
+   "subsidies": [
+    {
+     "name": "綾瀬市個人住宅用再エネ・省エネ設備等導入費補助金(令和8年度) 太陽光発電設備",
+     "category": "太陽光・蓄電池",
+     "who": "設備が設置された住宅の所在地に住民登録を有する個人（戸建て住宅、店舗等併用住宅を含む）",
+     "what": "自らが未使用の太陽光発電設備を設置したもの。電力会社と余剰買取方式で電力需給契約を締結していること。リース契約による使用は対象外",
+     "amount": "1kWあたり10,000円",
+     "max_yen": 30000,
+     "status": "受付中",
+     "deadline": "2027-03-15",
+     "fiscal_year": 2026,
+     "before_work": false
+    },
+    {
+     "name": "綾瀬市個人住宅用再エネ・省エネ設備等導入費補助金(令和8年度) HEMS",
+     "category": "省エネ・断熱",
+     "who": "設備が設置された住宅の所在地に住民登録を有する個人（戸建て住宅、店舗等併用住宅を含む）",
+     "what": "自らが未使用のHEMSを設置したもの。HEMS要件確認票に記載の要件をすべて満たす機器。リース契約による使用は対象外",
+     "amount": "定額10,000円",
+     "max_yen": 10000,
+     "status": "受付中",
+     "deadline": "2027-03-15",
+     "fiscal_year": 2026,
+     "before_work": false
+    },
+    {
+     "name": "綾瀬市個人住宅用再エネ・省エネ設備等導入費補助金(令和8年度) 家庭用燃料電池システム（エネファーム）",
+     "category": "省エネ・断熱",
+     "who": "設備が設置された住宅の所在地に住民登録を有する個人（戸建て住宅、店舗等併用住宅を含む）",
+     "what": "自らが未使用の家庭用燃料電池システムを設置したもの。燃料電池普及促進協会のエネファーム機器登録リストに登録済みの機器。リース契約による使用は対象外",
+     "amount": "定額50,000円",
+     "max_yen": 50000,
+     "status": "受付中",
+     "deadline": "2027-03-15",
+     "fiscal_year": 2026,
+     "before_work": false
+    },
+    {
+     "name": "綾瀬市個人住宅用再エネ・省エネ設備等導入費補助金(令和8年度) 定置用リチウムイオン蓄電システム（蓄電池）",
+     "category": "太陽光・蓄電池",
+     "who": "設備が設置された住宅の所在地に住民登録を有する個人（戸建て住宅、店舗等併用住宅を含む）",
+     "what": "自らが未使用の定置用リチウムイオン蓄電システムを設置したもの。環境共創イニシアチブの戸建ZEH補助事業の蓄電システム登録済製品一覧に登録済みの機器。リース契約による使用は対象外",
+     "amount": "定額50,000円",
+     "max_yen": 50000,
+     "status": "受付中",
+     "deadline": "2027-03-15",
+     "fiscal_year": 2026,
+     "before_work": false
+    },
+    {
+     "name": "綾瀬市個人住宅用再エネ・省エネ設備等導入費補助金(令和8年度) 電気自動車充給電器（V2H）",
+     "category": "車・充電",
+     "who": "設備が設置された住宅の所在地に住民登録を有する個人（戸建て住宅、店舗等併用住宅を含む）",
+     "what": "自らが未使用のV2H充給電器を設置したもの。次世代自動車振興センターの補助対象V2H充放電設備一覧に登録済みの機器。リース契約による使用は対象外",
+     "amount": "定額50,000円",
+     "max_yen": 50000,
+     "status": "受付中",
+     "deadline": "2027-03-15",
+     "fiscal_year": 2026,
+     "before_work": false
+    },
+    {
+     "name": "綾瀬市個人住宅用再エネ・省エネ設備等導入費補助金(令和8年度) ZEH加算",
+     "category": "省エネ・断熱",
+     "who": "設備が設置された住宅の所在地に住民登録を有する個人（戸建て住宅、店舗等併用住宅を含む）",
+     "what": "建築物省エネルギー性能表示（BELS）評価書でZEH、ZEH＋、ZEH Oriented、Nearly ZEHのいずれかの評価を受けたことを示す証書を取得していること",
+     "amount": "定額100,000円",
+     "max_yen": 100000,
+     "status": "受付中",
+     "deadline": "2027-03-15",
+     "fiscal_year": 2026,
+     "before_work": false
+    }
+   ],
+   "error": null
+  },
+  "https://www.city.ayase.kanagawa.jp/soshiki/kankyohozenka/zumai/1/24034.html": {
+   "municipality": "綾瀬市",
+   "url": "https://www.city.ayase.kanagawa.jp/soshiki/kankyohozenka/zumai/1/24034.html",
+   "hash": "4a8db42aae2ffa733955218b6f81b646170491e39bad9b73faa304b9f0257efd",
+   "read_on": "2026-11-05",
+   "subsidies": [
+    {
+     "name": "共同住宅用太陽光発電設備設置補助金(令和8年度)",
+     "category": "太陽光・蓄電池",
+     "who": "共同住宅に太陽光発電設備を新たに設置し、発電電力を当該共同住宅で使用する個人・団体・法人(個人の場合は自分の居住部分に供給しない場合)",
+     "what": "共同住宅への太陽光発電設備の設置",
+     "amount": "1キロワット当たり1万円、上限10万円",
+     "max_yen": 100000,
+     "status": "受付中",
+     "deadline": "2027-03-15",
+     "fiscal_year": 2026,
+     "before_work": false
+    }
+   ],
+   "error": null
+  },
+  "https://www.city.ayase.kanagawa.jp/soshiki/toshikeikakuka/zumai/2/2/5801.html": {
+   "municipality": "綾瀬市",
+   "url": "https://www.city.ayase.kanagawa.jp/soshiki/toshikeikakuka/zumai/2/2/5801.html",
+   "hash": "63864bfc9fa23e0604de925390f47360453015dc290afa793007600ae0eb2e5e",
+   "read_on": "2026-11-05",
+   "subsidies": [
+    {
+     "name": "木造住宅耐震化補助事業（耐震診断費補助）",
+     "category": "耐震",
+     "who": "市内の木造住宅を所有し居住、または所有者の2親等内の親族が居住する方",
+     "what": "平成12年5月31日以前に建築確認を受けた木造住宅の耐震診断費用（市の名簿登載建築士事務所が実施）",
+     "amount": "診断費用(税抜)の3分の2以内",
+     "max_yen": 40000,
+     "status": "不明",
+     "deadline": null,
+     "fiscal_year": null,
+     "before_work": true
+    },
+    {
+     "name": "木造住宅耐震化補助事業（耐震設計費補助）",
+     "category": "耐震",
+     "who": "市内の木造住宅を所有し居住、または所有者の2親等内の親族が居住する方",
+     "what": "耐震診断で総合評点1.0未満となった木造住宅の耐震設計費用（市の名簿登載建築士事務所が実施）",
+     "amount": "設計費用(税抜)の3分の2以内",
+     "max_yen": 80000,
+     "status": "不明",
+     "deadline": null,
+     "fiscal_year": null,
+     "before_work": true
+    },
+    {
+     "name": "木造住宅耐震化補助事業（耐震改修費補助）",
+     "category": "耐震",
+     "who": "市内の木造住宅を所有し居住、または所有者の2親等内の親族が居住する方",
+     "what": "耐震診断で総合評点1.0未満となった木造住宅の補強工事費用（耐震設計に基づく工事）",
+     "amount": "工事費用(税抜)の3分の2以内",
+     "max_yen": 1000000,
+     "status": "不明",
+     "deadline": null,
+     "fiscal_year": null,
+     "before_work": true
+    },
+    {
+     "name": "木造住宅耐震化補助事業（工事監理費補助）",
+     "category": "耐震",
+     "who": "市内の木造住宅を所有し居住、または所有者の2親等内の親族が居住する方",
+     "what": "耐震改修工事が設計どおり行われるかを専門家が監理する費用（耐震改修費補助と一緒に申請）",
+     "amount": "監理費用(税抜)の3分の2以内",
+     "max_yen": 60000,
+     "status": "不明",
+     "deadline": null,
+     "fiscal_year": null,
+     "before_work": true
+    },
+    {
+     "name": "木造住宅耐震化補助事業（除却費補助）",
+     "category": "耐震",
+     "who": "市内の木造住宅を所有し居住、または所有者の2親等内の親族が居住する方",
+     "what": "耐震診断で総合評点1.0未満となった木造住宅を全て除却する工事費用",
+     "amount": "除却費用(税抜)の3分の2以内",
+     "max_yen": 300000,
+     "status": "不明",
+     "deadline": null,
+     "fiscal_year": null,
+     "before_work": true
+    },
+    {
+     "name": "木造住宅耐震化補助事業（耐震シェルターまたは防災ベッド設置費補助）",
+     "category": "耐震",
+     "who": "市内の木造住宅を所有し居住、または所有者の2親等内の親族が居住する方（耐震改修費補助申請者を除く）",
+     "what": "市長が定めた耐震シェルターまたは防災ベッドの設置費用（耐震診断で総合評点1.0未満の住宅）",
+     "amount": "設置費用(税抜)の3分の2以内",
+     "max_yen": 180000,
+     "status": "不明",
+     "deadline": null,
+     "fiscal_year": null,
+     "before_work": true
+    }
+   ],
+   "error": null
+  },
+  "https://www.city.ayase.kanagawa.jp/soshiki/toshikeikakuka/zumai/2/1/5871.html": {
+   "municipality": "綾瀬市",
+   "url": "https://www.city.ayase.kanagawa.jp/soshiki/toshikeikakuka/zumai/2/1/5871.html",
+   "hash": "bbe5b0a6a7f9f6c68610fc8431055107f1f1e1ab90829eb06d66dc0da8522481",
+   "read_on": "2026-11-05",
+   "subsidies": [
+    {
+     "name": "危険ブロック塀等耐震化補助事業（綾瀬市危険ブロック塀等耐震化補助金）",
+     "category": "耐震",
+     "who": "通り抜けできる道路に面したブロック塀等を所有または管理し、市税を滞納していない方",
+     "what": "危険と認められるブロック塀等を撤去し、おおむね40センチメートル以下にする工事、または撤去後の安全な工作物等の設置工事（市内施工業者が行う、着工予定の工事）",
+     "amount": "撤去：税抜費用の10/10（通学路）または1/2（それ以外）。設置も同様の補助率。",
+     "max_yen": 500000,
+     "status": "不明",
+     "deadline": null,
+     "fiscal_year": null,
+     "before_work": true
+    }
+   ],
+   "error": null
+  },
   "https://www.town.hayama.lg.jp/soshiki/sangyou/shoko/1746.html": {
    "municipality": "葉山町",
    "url": "https://www.town.hayama.lg.jp/soshiki/sangyou/shoko/1746.html",
@@ -4962,6 +5166,39 @@
      "deadline": "2020-03-10",
      "fiscal_year": 2019,
      "before_work": false
+    }
+   ],
+   "error": null
+  },
+  "https://www.town.yamakita.kanagawa.jp/0000002915.html": {
+   "municipality": "山北町",
+   "url": "https://www.town.yamakita.kanagawa.jp/0000002915.html",
+   "hash": "35dafe7f955c5b286d966b3486ce7d027441ecc13bbb6be64adca8a3114f83c7",
+   "read_on": "2026-11-05",
+   "subsidies": [
+    {
+     "name": "木造住宅耐震診断費補助制度",
+     "category": "防災",
+     "who": "町内に自ら所有し居住する個人住宅の所有者(昭和56年5月31日以前に建築確認を受けた木造一戸建住宅等)",
+     "what": "木造住宅の耐震診断(一般診断法または精密診断法)にかかる費用",
+     "amount": "耐震診断に必要な経費の4分の3まで",
+     "max_yen": 60000,
+     "status": "受付中",
+     "deadline": "2026-11-30",
+     "fiscal_year": 2026,
+     "before_work": true
+    },
+    {
+     "name": "耐震改修工事等補助制度",
+     "category": "防災",
+     "who": "町内に自ら所有し居住する個人住宅の所有者(耐震診断費補助制度の要件を満たす木造住宅)",
+     "what": "耐震診断の結果、総合評点が1.0未満の木造住宅について、改修工事後に総合評点1.0以上となる耐震改修工事",
+     "amount": "耐震改修工事等に必要な経費の2分の1まで",
+     "max_yen": 600000,
+     "status": "受付中",
+     "deadline": "2026-11-30",
+     "fiscal_year": 2026,
+     "before_work": true
     }
    ],
    "error": null
