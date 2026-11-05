@@ -1,10 +1,17 @@
 # 補助金を集める自治体。domain は公式サイトのドメイン(検索をこのドメインに絞る)。
+# seeds は必ず読むページ(自動の検索で見つからない自治体用)。
 # ドメインが間違っていると「ページが見つからない」と通知されるので、そのときに直す。
 prefecture: 神奈川県
 slug: kanagawa
 municipalities:
   - {name: 神奈川県, domain: pref.kanagawa.jp}
-  - {name: 横浜市, domain: city.yokohama.lg.jp}
+  - name: 横浜市
+    domain: city.yokohama.lg.jp
+    seeds:   # 自動の検索で見つからなかったため手で足したページ
+      - https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/jutaku/sien/shoene/event/r8kizondannetuhojo.html
+      - https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/jutaku/sien/shoene/event/shosai/R8teikizon.html
+      - https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/bosai/taishin/hojokinshienseido/mokutai/mokukaishu/mokukaishu.html
+      - https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/bosai/blockbei/blockbei.html
   - {name: 川崎市, domain: city.kawasaki.jp}
   - {name: 相模原市, domain: city.sagamihara.kanagawa.jp}
   - {name: 横須賀市, domain: city.yokosuka.kanagawa.jp}
@@ -13,10 +20,22 @@ municipalities:
   - {name: 藤沢市, domain: city.fujisawa.kanagawa.jp}
   - {name: 小田原市, domain: city.odawara.kanagawa.jp}
   - {name: 茅ヶ崎市, domain: city.chigasaki.kanagawa.jp}
-  - {name: 逗子市, domain: city.zushi.kanagawa.jp}
+  - name: 逗子市
+    domain: city.zushi.kanagawa.jp
+    seeds:   # 自動の検索で見つからなかったため手で足したページ
+      - https://www.city.zushi.kanagawa.jp/kurashi/sumai/1002149/1002158/1002159.html
+      - https://www.city.zushi.kanagawa.jp/kurashi/kankyo/1007555/1012671/1012700.html
+      - https://www.city.zushi.kanagawa.jp/shisei/toshiseibi/1005762/1005765.html
   - {name: 三浦市, domain: city.miura.kanagawa.jp}
   - {name: 秦野市, domain: city.hadano.kanagawa.jp}
-  - {name: 厚木市, domain: city.atsugi.kanagawa.jp}
+  - name: 厚木市
+    domain: city.atsugi.kanagawa.jp
+    seeds:   # 自動の検索で見つからなかったため手で足したページ
+      - https://www.city.atsugi.kanagawa.jp/soshiki/kenchikushidoka/9/5/4697.html
+      - https://www.city.atsugi.kanagawa.jp/soshiki/jutakuka/9/3/4046.html
+      - https://www.city.atsugi.kanagawa.jp/soshiki/jutakuka/9/3/20447.html
+      - https://www.city.atsugi.kanagawa.jp/soshiki/fukushisomuka/3602.html
+      - https://www.city.atsugi.kanagawa.jp/soshiki/kankyoseisakuka/3/8/33951.html
   - {name: 大和市, domain: city.yamato.lg.jp}
   - {name: 伊勢原市, domain: city.isehara.kanagawa.jp}
   - {name: 海老名市, domain: city.ebina.kanagawa.jp}

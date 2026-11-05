@@ -85,9 +85,12 @@ def main() -> int:
             if age < MAX_AGE_DAYS:
                 continue
         try:
+            seeds = [{"title": "", "url": u} for u in m.get("seeds", [])]
             pages = ask(client, m["name"], m["domain"])
-            if not pages:
+            if not pages and not seeds:
                 pages = ask(client, m["name"], m["domain"], restrict=False)
+            known = {p["url"] for p in pages}
+            pages += [p for p in seeds if p["url"] not in known]
             state["municipalities"][m["name"]] = {"domain": m["domain"], "pages": pages,
                                                   "searched_at": now().isoformat(timespec="minutes"), "error": None}
             print(f"OK  {m['name']}: {len(pages)}ページ")
