@@ -3128,5 +3128,24 @@
   "date": "2026-11-05",
   "type": "gone",
   "key": "SBJ銀行|好金利で貯める（定期預金）|None"
+ },
+ {
+  "date": "2026-11-05",
+  "type": "up",
+  "offer": {
+   "product": "円普通預金（BANK）",
+   "kind": "普通預金",
+   "term_months": null,
+   "rate_pct": 1.2,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 1,
+   "conditions": "預入金額100万円以下の部分の変動金利。BANK口座限定",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "あおぞら銀行 BANK"
+  },
+  "prev": 0.75
  }
 ]
