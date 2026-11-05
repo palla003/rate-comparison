@@ -41,8 +41,11 @@ def now() -> dt.datetime:
     return dt.datetime.now(JST)
 
 
-def ask(client, name: str, domain: str) -> list[dict]:
-    tools = [{"type": "web_search_20260209", "name": "web_search", "max_uses": 5, "allowed_domains": [domain]}]
+def ask(client, name: str, domain: str, restrict: bool = True) -> list[dict]:
+    tool = {"type": "web_search_20260209", "name": "web_search", "max_uses": 5}
+    if restrict:          # 検索を公式ドメインに絞る。0件のときは絞らずに探し、結果をドメインで選り分ける
+        tool["allowed_domains"] = [domain]
+    tools = [tool]
     messages = [{"role": "user", "content": PROMPT.format(name=name, domain=domain, topics=TOPICS)}]
     for _ in range(4):                                 # pause_turn が来たら続きを頼む
         with client.messages.stream(model=MODEL, max_tokens=16000, output_config={"effort": "low"},
@@ -77,12 +80,14 @@ def main() -> int:
     done = failed = 0
     for m in conf["municipalities"]:
         rec = state["municipalities"].get(m["name"], {})
-        if rec.get("searched_at") and not force and not rec.get("error"):
+        if rec.get("searched_at") and not force and not rec.get("error") and rec.get("pages"):
             age = (now() - dt.datetime.fromisoformat(rec["searched_at"])).days
             if age < MAX_AGE_DAYS:
                 continue
         try:
             pages = ask(client, m["name"], m["domain"])
+            if not pages:
+                pages = ask(client, m["name"], m["domain"], restrict=False)
             state["municipalities"][m["name"]] = {"domain": m["domain"], "pages": pages,
                                                   "searched_at": now().isoformat(timespec="minutes"), "error": None}
             print(f"OK  {m['name']}: {len(pages)}ページ")
