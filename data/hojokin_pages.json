@@ -29,8 +29,25 @@
   },
   "横浜市": {
    "domain": "city.yokohama.lg.jp",
-   "pages": [],
-   "searched_at": "2026-11-05T15:40+09:00",
+   "pages": [
+    {
+     "title": "",
+     "url": "https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/jutaku/sien/shoene/event/r8kizondannetuhojo.html"
+    },
+    {
+     "title": "",
+     "url": "https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/jutaku/sien/shoene/event/shosai/R8teikizon.html"
+    },
+    {
+     "title": "",
+     "url": "https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/bosai/taishin/hojokinshienseido/mokutai/mokukaishu/mokukaishu.html"
+    },
+    {
+     "title": "",
+     "url": "https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/bosai/blockbei/blockbei.html"
+    }
+   ],
+   "searched_at": "2026-11-06T10:48+09:00",
    "error": null
   },
   "川崎市": {
@@ -327,8 +344,21 @@
   },
   "逗子市": {
    "domain": "city.zushi.kanagawa.jp",
-   "pages": [],
-   "searched_at": "2026-11-05T15:40+09:00",
+   "pages": [
+    {
+     "title": "",
+     "url": "https://www.city.zushi.kanagawa.jp/kurashi/sumai/1002149/1002158/1002159.html"
+    },
+    {
+     "title": "",
+     "url": "https://www.city.zushi.kanagawa.jp/kurashi/kankyo/1007555/1012671/1012700.html"
+    },
+    {
+     "title": "",
+     "url": "https://www.city.zushi.kanagawa.jp/shisei/toshiseibi/1005762/1005765.html"
+    }
+   ],
+   "searched_at": "2026-11-06T10:49+09:00",
    "error": null
   },
   "三浦市": {
@@ -375,8 +405,53 @@
   },
   "厚木市": {
    "domain": "city.atsugi.kanagawa.jp",
-   "pages": [],
-   "searched_at": "2026-11-05T15:41+09:00",
+   "pages": [
+    {
+     "title": "定住促進子育て世帯住宅取得支援事業補助金",
+     "url": "https://www.city.atsugi.kanagawa.jp/soshiki/jutakuka/9/3/20447.html"
+    },
+    {
+     "title": "親元近居・同居住宅取得等支援事業補助金",
+     "url": "https://www.city.atsugi.kanagawa.jp/soshiki/jutakuka/9/3/4046.html"
+    },
+    {
+     "title": "老朽空き家解体工事補助金",
+     "url": "https://www.city.atsugi.kanagawa.jp/soshiki/jutakuka/5/2/3629.html"
+    },
+    {
+     "title": "木造住宅の耐震診断・耐震改修設計・耐震改修工事・除却工事補助制度",
+     "url": "https://www.city.atsugi.kanagawa.jp/soshiki/kenchikushidoka/9/5/4697.html"
+    },
+    {
+     "title": "分譲マンションへの予備診断補助",
+     "url": "https://www.city.atsugi.kanagawa.jp/soshiki/kenchikushidoka/9/5/2704.html"
+    },
+    {
+     "title": "厚木市危険ブロック塀等防災工事補助金交付制度",
+     "url": "https://www.city.atsugi.kanagawa.jp/soshiki/kikikanrika/4/1/306.html"
+    },
+    {
+     "title": "厚木市急傾斜地安全対策工事補助金交付制度",
+     "url": "https://www.city.atsugi.kanagawa.jp/bousai/3/1/11547.html"
+    },
+    {
+     "title": "厚木市居住誘導区域（がけ地近接等危険住宅）移転事業補助金",
+     "url": "https://www.city.atsugi.kanagawa.jp/soshiki/toshikeikakuka/cn/29353.html"
+    },
+    {
+     "title": "あんしん住まい見守りサービス 厚木市賃貸住宅あんしん保証制度（補助金）",
+     "url": "https://www.city.atsugi.kanagawa.jp/soshiki/jutakuka/9/1/8822.html"
+    },
+    {
+     "title": "地域脱炭素移行・再エネ推進交付金（重点対策加速化事業）",
+     "url": "https://www.city.atsugi.kanagawa.jp/soshiki/kankyoseisakuka/3/8/33951.html"
+    },
+    {
+     "title": "",
+     "url": "https://www.city.atsugi.kanagawa.jp/soshiki/fukushisomuka/3602.html"
+    }
+   ],
+   "searched_at": "2026-11-06T10:49+09:00",
    "error": null
   },
   "大和市": {
@@ -1055,7 +1130,7 @@
   "清川村": {
    "domain": "vill.kiyokawa.kanagawa.jp",
    "pages": [],
-   "searched_at": "2026-11-05T15:42+09:00",
+   "searched_at": "2026-11-06T10:50+09:00",
    "error": null
   }
  }
