@@ -3185,5 +3185,116 @@
    "bank": "あおぞら銀行 BANK"
   },
   "prev": 0.75
+ },
+ {
+  "date": "2026-11-07",
+  "type": "up",
+  "offer": {
+   "product": "円普通預金（BANK）",
+   "kind": "普通預金",
+   "term_months": null,
+   "rate_pct": 1.2,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 1,
+   "conditions": "預入金額100万円以下の部分の変動金利。BANK口座限定",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "あおぞら銀行 BANK"
+  },
+  "prev": 0.75
+ },
+ {
+  "date": "2026-11-07",
+  "type": "new",
+  "offer": {
+   "product": "よさこいおきゃく定期（スーパー定期＜単利型＞）",
+   "kind": "定期預金",
+   "term_months": 12,
+   "rate_pct": 0.75,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "よさこいおきゃく支店の個人口座保有者限定。1口10万円以上、お一人さま100万円まで。インターネットバンキング利用口座からのみ預入。",
+   "start_date": "2026-11-05",
+   "end_date": null,
+   "quota": null,
+   "bank": "高知銀行 よさこいおきゃく支店"
+  }
+ },
+ {
+  "date": "2026-11-07",
+  "type": "new",
+  "offer": {
+   "product": "おきゃく定期（スーパー定期＜単利型＞）",
+   "kind": "定期預金",
+   "term_months": 12,
+   "rate_pct": 0.65,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "よさこいおきゃく支店の個人口座保有者限定。1口10万円以上。300万円未満・以上で同率。インターネットバンキングからのみ預入。",
+   "start_date": "2026-11-05",
+   "end_date": null,
+   "quota": null,
+   "bank": "高知銀行 よさこいおきゃく支店"
+  }
+ },
+ {
+  "date": "2026-11-07",
+  "type": "new",
+  "offer": {
+   "product": "おきゃく定期（スーパー定期＜複利型＞）",
+   "kind": "定期預金",
+   "term_months": 36,
+   "rate_pct": 0.75,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "よさこいおきゃく支店の個人口座保有者限定。1口10万円以上。複利型、6カ月毎複利。300万円未満・以上で同率。インターネットバンキングからのみ預入。",
+   "start_date": "2026-11-05",
+   "end_date": null,
+   "quota": null,
+   "bank": "高知銀行 よさこいおきゃく支店"
+  }
+ },
+ {
+  "date": "2026-11-07",
+  "type": "new",
+  "offer": {
+   "product": "おきゃく定期（スーパー定期＜複利型＞）",
+   "kind": "定期預金",
+   "term_months": 60,
+   "rate_pct": 0.9,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 100000,
+   "conditions": "よさこいおきゃく支店の個人口座保有者限定。1口10万円以上。複利型、6カ月毎複利。300万円未満・以上で同率。インターネットバンキングからのみ預入。",
+   "start_date": "2026-11-05",
+   "end_date": null,
+   "quota": null,
+   "bank": "高知銀行 よさこいおきゃく支店"
+  }
+ },
+ {
+  "date": "2026-11-07",
+  "type": "gone",
+  "key": "高知銀行 よさこいおきゃく支店|よさこいおきゃく定期（スーパー定期＜単利型＞、よさこいおきゃく支店専用）|12"
+ },
+ {
+  "date": "2026-11-07",
+  "type": "gone",
+  "key": "高知銀行 よさこいおきゃく支店|おきゃく定期（スーパー定期＜複利型＞、よさこいおきゃく支店専用）|36"
+ },
+ {
+  "date": "2026-11-07",
+  "type": "gone",
+  "key": "高知銀行 よさこいおきゃく支店|おきゃく定期（スーパー定期＜単利型＞、よさこいおきゃく支店専用）|12"
+ },
+ {
+  "date": "2026-11-07",
+  "type": "gone",
+  "key": "高知銀行 よさこいおきゃく支店|おきゃく定期（スーパー定期＜複利型＞、よさこいおきゃく支店専用）|60"
  }
 ]
