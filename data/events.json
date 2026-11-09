@@ -3315,5 +3315,46 @@
    "bank": "あおぞら銀行 BANK"
   },
   "prev": 0.75
+ },
+ {
+  "date": "2026-11-09",
+  "type": "new",
+  "offer": {
+   "product": "BANK 普通預金",
+   "kind": "普通預金",
+   "term_months": null,
+   "rate_pct": 1.2,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 1,
+   "conditions": "BANK口座限定。100万円以下の部分。変動金利",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "あおぞら銀行 BANK"
+  }
+ },
+ {
+  "date": "2026-11-09",
+  "type": "new",
+  "offer": {
+   "product": "BANK 普通預金",
+   "kind": "普通預金",
+   "term_months": null,
+   "rate_pct": 0.75,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 1000001,
+   "conditions": "BANK口座限定。100万円超の部分。変動金利",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "あおぞら銀行 BANK"
+  }
+ },
+ {
+  "date": "2026-11-09",
+  "type": "gone",
+  "key": "あおぞら銀行 BANK|円普通預金（BANK）|None"
  }
 ]
