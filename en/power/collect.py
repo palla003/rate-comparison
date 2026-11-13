@@ -10,6 +10,7 @@ sys.path.insert(0, str(pathlib.Path(__file__).resolve().parent.parent))
 from common import get_json, save, update_history  # noqa: E402
 
 HERE = pathlib.Path(__file__).resolve().parent
+OVERRIDES = yaml.safe_load((HERE / "overrides.yaml").read_text()) or {} if (HERE / "overrides.yaml").exists() else {}
 IS_STATION = re.compile(r"power station|portable power|solar generator|home backup|power bank station", re.I)
 NOT_STATION = re.compile(r"\b(cable|adapter|bag|case|cover|charger only|panel only|extra battery|expansion battery|smart extra|"
                          r"warranty|protection plan|gift card|accessor|mount|tripod|refrigerator|fridge|cooler|air conditioner|"
@@ -20,9 +21,14 @@ WATT = re.compile(r"(\d{3,5}|\d{1,2},\d{3})\s*w\b(?!h)", re.I)
 TAG = re.compile(r"<[^>]+>")
 
 
-def wh_values(text: str) -> list[float]:
+EXPAND = re.compile(r"expand|extend|up to|upgrad|scal|extra|additional|combined|total|max(imum)?\b|with (\w+ )?batter|add(ing)? ", re.I)
+
+
+def wh_values(text: str, skip_expansion: bool = False) -> list[float]:
     out = []
     for m in WH.finditer(text or ""):
+        if skip_expansion and EXPAND.search(text[max(0, m.start() - 60):m.start()]):
+            continue  # 「最大25kWhまで拡張」などの値は本体容量ではない
         if m.group(1):
             out.append(float(m.group(1).replace(",", ".")) * 1000)
         else:
@@ -39,7 +45,7 @@ def capacity(title: str, vtitle: str, body: str) -> tuple[float | None, str]:
         v = wh_values(text)
         if v:
             return v[0], src
-    v = wh_values(TAG.sub(" ", body or ""))
+    v = wh_values(TAG.sub(" ", body or ""), skip_expansion=True)
     if not v:
         return None, ""
     # 型番の数字(例: Yeti 6000X → 6000)に近い値が説明文にあればそれを使う
@@ -102,8 +108,13 @@ def main():
                     if price < 50:
                         continue
                     wh, src = capacity(title, vt, body)
+                    if p.get("handle") in OVERRIDES:
+                        wh, src = float(OVERRIDES[p["handle"]]), "checked"
                     if not wh:
                         continue
+                    if src == "description" and price / wh < 0.25:
+                        print("  skip (capacity unsure):", title, wh, price, flush=True)
+                        continue  # 説明文から読んだ容量で極端に安く見えるものは、読み違いの可能性が高いので載せない
                     was = float(v.get("compare_at_price") or 0) or None
                     rows.append({
                         "key": f"{s['brand']}|{p.get('handle')}|{v.get('id')}",

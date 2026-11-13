@@ -1,0 +1,4 @@
+# 説明文から容量を正しく読めない商品の本体容量(Wh)。キーは商品ページURLの /products/ の後ろ。
+delta-pro-portable-power-station: 3600
+delta-3-portable-power-station: 1024
+delta-2-max-portable-power-station: 2048
