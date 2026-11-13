@@ -162,6 +162,7 @@ def page(title: str, desc: str, path: str, body: str, updated: str, jsonld: str 
     canon = f'<link rel="canonical" href="{SITE_URL}/en/{path}">' if SITE_URL else ""
     return f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="fo-verify" content="eb82f8ff-a67f-4d5b-97ca-a39dc87fbb6e" />
 <title>{e(title)}</title><meta name="description" content="{e(desc)}">{canon}
 {FONTS}<style>{CSS}</style>{jsonld}</head><body><div class="wrap">
 <header class="mast"><a class="name" href="{'../' if path else './'}">Price Per Unit</a>
