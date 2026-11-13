@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-11-13T11:07+09:00",
+ "generated_at": "2026-11-14T07:24+09:00",
  "pages": {
   "https://www.pref.kanagawa.jp/docs/ap4/cnt/f300183/shouenekaishu.html": {
    "municipality": "神奈川県",
    "url": "https://www.pref.kanagawa.jp/docs/ap4/cnt/f300183/shouenekaishu.html",
-   "hash": "a271a7d5ffcab065133994a318ce4e3ecef4b25806e8281a3d30b215ab263a5c",
-   "read_on": "2026-11-13",
+   "hash": "4c4bdf4e709dfc7dcc18d3c88584d69aec151983e49e97ba4fb1cd3588c3da70",
+   "read_on": "2026-11-14",
    "subsidies": [
     {
      "name": "令和8年度神奈川県既存住宅省エネ改修事業費補助金",
      "category": "省エネ・断熱",
-     "who": "県内の既存住宅に常時居住し、所有または区分所有している個人",
-     "what": "指定する補助対象製品（窓・ガラス・断熱材）を用いた既存住宅の省エネ改修工事。外気に接する窓（玄関ドア等含む）の改修が必須、壁・天井・床は任意",
+     "who": "神奈川県内の既存住宅に常時居住し、所有または区分所有する個人（賃貸住宅は対象外）",
+     "what": "補助対象製品を用いた既存住宅の窓（玄関ドア等含む）等の省エネ改修工事。外気に接する窓の改修は必須、壁・天井・床は任意",
      "amount": "補助対象経費の3分の1又は15万円のいずれか低い額",
      "max_yen": 150000,
-     "status": "受付終了",
+     "status": "予算到達",
      "deadline": "2026-09-30",
      "fiscal_year": 2026,
      "before_work": true
@@ -25,15 +25,15 @@
   "https://www.pref.kanagawa.jp/docs/ap4/solar_home/taiyoukouchikudenchi.html": {
    "municipality": "神奈川県",
    "url": "https://www.pref.kanagawa.jp/docs/ap4/solar_home/taiyoukouchikudenchi.html",
-   "hash": "d0203cc0fed91242a5598077e62f4845d0ad6f949a568529af4ef30627a65ef3",
-   "read_on": "2026-11-13",
+   "hash": "40e63e16f966b0959b13a7e3b6359d282709ad09642ec4bac50c7df0ff7e888a",
+   "read_on": "2026-11-14",
    "subsidies": [
     {
      "name": "令和8年度神奈川県住宅用太陽光発電・蓄電池導入費補助金",
      "category": "太陽光・蓄電池",
-     "who": "県内の耐震性能を確保した戸建住宅を所有または区分所有する個人（共同住宅は管理組合等も対象）",
-     "what": "住宅用の太陽光発電設備と併せて蓄電システム等を導入する設備費・設置工事費",
-     "amount": "太陽光は発電出力1kWあたり7万円、蓄電システムは1台15万円",
+     "who": "県内の戸建住宅（賃貸除く）を所有・区分所有する個人など",
+     "what": "住宅用太陽光発電設備と蓄電システム等を併せて導入する設備費・設置工事費",
+     "amount": "太陽光は1kWあたり7万円、蓄電システムは1台15万円（補助対象経費が上限）",
      "max_yen": null,
      "status": "受付終了",
      "deadline": "2026-09-30",
@@ -46,15 +46,15 @@
   "https://www.pref.kanagawa.jp/docs/ap4/cnt/f300183/kanagawa-kyoudouzyutaku.html": {
    "municipality": "神奈川県",
    "url": "https://www.pref.kanagawa.jp/docs/ap4/cnt/f300183/kanagawa-kyoudouzyutaku.html",
-   "hash": "4a5f49f526c165783d8816fa12d0ab29ece822de0deff86bbca9335553527bbe",
-   "read_on": "2026-11-13",
+   "hash": "c85b997129400e2167d8e237dfde8e69d3268b661a03f251d29c73145a0070a6",
+   "read_on": "2026-11-14",
    "subsidies": [
     {
      "name": "令和7年度神奈川県共同住宅用自家消費型太陽光発電等導入費補助金",
      "category": "太陽光・蓄電池",
      "who": "県内の分譲共同住宅の管理組合、または県内の賃貸共同住宅を所有する個人又は法人（国及び公共法人を除く）",
-     "what": "県内の共同住宅に新たに自家消費型太陽光発電設備及び蓄電システム等を導入する経費（耐震性能を確保した共同住宅が対象）",
-     "amount": "太陽光発電設備は1kWあたり7万円、蓄電システム等は1台あたり15万円（補助対象額は補助対象経費が上限）",
+     "what": "県内の共同住宅に新たに自家消費型太陽光発電設備及び蓄電システム等を導入する経費（設備費・設置工事費）",
+     "amount": "太陽光は発電出力1kWあたり7万円、蓄電システム等は1台あたり15万円",
      "max_yen": null,
      "status": "受付終了",
      "deadline": "2025-12-26",
@@ -95,7 +95,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.pref.kanagawa.jp/osirase/0502/kanagawa-datsutanso-portal/supports/": {
    "municipality": "神奈川県",
@@ -200,7 +200,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/jutaku/sien/shoene/event/r8kizondannetuhojo.html": {
    "municipality": "横浜市",
@@ -245,7 +245,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.yokohama.lg.jp/kurashi/sumai-kurashi/jutaku/sien/shoene/event/shosai/R8teikizon.html": {
    "municipality": "横浜市",
@@ -278,7 +278,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/bosai/taishin/hojokinshienseido/mokutai/mokukaishu/mokukaishu.html": {
    "municipality": "横浜市",
@@ -299,7 +299,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.yokohama.lg.jp/business/bunyabetsu/kenchiku/bosai/blockbei/blockbei.html": {
    "municipality": "横浜市",
@@ -320,7 +320,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.kawasaki.jp/300/page/0000147914.html": {
    "municipality": "川崎市",
@@ -401,7 +401,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.sagamihara.kanagawa.jp/kurashi/1026489/sumai/1026513/index.html": {
    "municipality": "相模原市",
@@ -554,7 +554,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.yokosuka.kanagawa.jp/4821/tokei/danti/kosodatebank.html": {
    "municipality": "横須賀市",
@@ -587,7 +587,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.yokosuka.kanagawa.jp/4821/sumai/koureisya_reform.html": {
    "municipality": "横須賀市",
@@ -608,7 +608,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.yokosuka.kanagawa.jp/4821/tokei/2setai/2setai.html": {
    "municipality": "横須賀市",
@@ -629,7 +629,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.yokosuka.kanagawa.jp/4840/sidouka/taisin_syousai.html": {
    "municipality": "横須賀市",
@@ -674,7 +674,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.yokosuka.kanagawa.jp/4840/sidouka/taisin.html": {
    "municipality": "横須賀市",
@@ -719,7 +719,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.yokosuka.kanagawa.jp/0810/kekkonshien.html": {
    "municipality": "横須賀市",
@@ -740,7 +740,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.yokosuka.kanagawa.jp/2625/g_info/l100000562.html": {
    "municipality": "横須賀市",
@@ -761,7 +761,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.yokosuka.kanagawa.jp/4830/g_info/l100000905.html": {
    "municipality": "横須賀市",
@@ -782,7 +782,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.yokosuka.kanagawa.jp/5530/kyouai/index.html": {
    "municipality": "横須賀市",
@@ -803,7 +803,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.yokosuka.kanagawa.jp/5520/watakusidou/index.html": {
    "municipality": "横須賀市",
@@ -824,7 +824,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.yokosuka.kanagawa.jp/4840/sidouka/hei.html": {
    "municipality": "横須賀市",
@@ -845,7 +845,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.yokosuka.kanagawa.jp/sangyo/toshiseibi/sumai/index.html": {
    "municipality": "横須賀市",
@@ -853,7 +853,7 @@
    "hash": "5e3e443f89117339ea7bcac13dbe1870287200c6753b65f5791fcf175b1e5340",
    "read_on": "2026-11-13",
    "subsidies": [],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.hiratsuka.kanagawa.jp/kankyo/page67_00126.html": {
    "municipality": "平塚市",
@@ -874,7 +874,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.hiratsuka.kanagawa.jp/kankyo/page67_00127.html": {
    "municipality": "平塚市",
@@ -895,7 +895,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.hiratsuka.kanagawa.jp/kankyo/page67_00041.html": {
    "municipality": "平塚市",
@@ -916,7 +916,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.hiratsuka.kanagawa.jp/machizukuri/page-c_01937.html": {
    "municipality": "平塚市",
@@ -937,7 +937,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.hiratsuka.kanagawa.jp/machizukuri/page-c_01938.html": {
    "municipality": "平塚市",
@@ -958,7 +958,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.hiratsuka.kanagawa.jp/machizukuri/page-c_01939.html": {
    "municipality": "平塚市",
@@ -979,7 +979,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.hiratsuka.kanagawa.jp/machizukuri/page-c_01947.html": {
    "municipality": "平塚市",
@@ -1000,7 +1000,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.hiratsuka.kanagawa.jp/machizukuri/page-c_02068.html": {
    "municipality": "平塚市",
@@ -1021,7 +1021,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.hiratsuka.kanagawa.jp/machizukuri/page-c_01944.html": {
    "municipality": "平塚市",
@@ -1042,7 +1042,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.hiratsuka.kanagawa.jp/machizukuri/page-c_01941.html": {
    "municipality": "平塚市",
@@ -1075,7 +1075,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.hiratsuka.kanagawa.jp/machizukuri/page-c_01930.html": {
    "municipality": "平塚市",
@@ -1096,7 +1096,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.hiratsuka.kanagawa.jp/machizukuri/page-c_02774.html": {
    "municipality": "平塚市",
@@ -1129,7 +1129,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.hiratsuka.kanagawa.jp/promotion/page-c_00004.html": {
    "municipality": "平塚市",
@@ -1150,7 +1150,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.hiratsuka.kanagawa.jp/machizukuri/page-c_01908.html": {
    "municipality": "平塚市",
@@ -1219,7 +1219,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.hiratsuka.kanagawa.jp/kankyo/page-c_02525.html": {
    "municipality": "平塚市",
@@ -1300,7 +1300,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.kamakura.kanagawa.jp/kankyo/saiseihojyo.html": {
    "municipality": "鎌倉市",
@@ -1321,7 +1321,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.kamakura.kanagawa.jp/kankyo/saiseihojo-juten.html": {
    "municipality": "鎌倉市",
@@ -1354,7 +1354,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.kamakura.kanagawa.jp/kenchikushidou/taishin-ishindan-soudan.html": {
    "municipality": "鎌倉市",
@@ -1375,7 +1375,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.kamakura.kanagawa.jp/kenchikushidou/taishin-kaisyu.html": {
    "municipality": "鎌倉市",
@@ -1396,7 +1396,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.kamakura.kanagawa.jp/kenchikushidou/mansyon.html": {
    "municipality": "鎌倉市",
@@ -1417,7 +1417,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.kamakura.kanagawa.jp/kenchikushidou/bousaibeddo.html": {
    "municipality": "鎌倉市",
@@ -1438,7 +1438,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.kamakura.kanagawa.jp/kenchikushidou/block.html": {
    "municipality": "鎌倉市",
@@ -1459,7 +1459,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.kamakura.kanagawa.jp/midori/machinami.html": {
    "municipality": "鎌倉市",
@@ -1480,7 +1480,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.kamakura.kanagawa.jp/kenchikushidou/tyouki.html": {
    "municipality": "鎌倉市",
@@ -1488,7 +1488,7 @@
    "hash": "25f962f6fd1ddc9a507adef00fde6841ee282e4d1a4ad97ad50616985965b202",
    "read_on": "2026-11-13",
    "subsidies": [],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.kamakura.kanagawa.jp/kenchiku/jyutaku_jyosei.html": {
    "municipality": "鎌倉市",
@@ -1641,7 +1641,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.fujisawa.kanagawa.jp/zeroc/machizukuri/kankyo/hojo/taiyoko_jikasyouhi.html": {
    "municipality": "藤沢市",
@@ -1662,7 +1662,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.fujisawa.kanagawa.jp/zeroc/machizukuri/kankyo/hojo/taiyoko2.html": {
    "municipality": "藤沢市",
@@ -1707,7 +1707,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.fujisawa.kanagawa.jp/zeroc/machizukuri/kankyo/hojo/dannetu.html": {
    "municipality": "藤沢市",
@@ -1728,7 +1728,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://city.fujisawa.kanagawa.jp/kankyou-s/machizukuri/kankyo/hojo/shinsei.html": {
    "municipality": "藤沢市",
@@ -1761,7 +1761,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.fujisawa.kanagawa.jp/jutaku/machizukuri/sumai/taishin/hojo/kaishu.html": {
    "municipality": "藤沢市",
@@ -1782,7 +1782,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.fujisawa.kanagawa.jp/jutaku/machizukuri/sumai/taishin/hojo/shelter.html": {
    "municipality": "藤沢市",
@@ -1803,7 +1803,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.fujisawa.kanagawa.jp/jutaku/machizukuri/sumai/taishin/shindan/mansion.html": {
    "municipality": "藤沢市",
@@ -1824,7 +1824,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.fujisawa.kanagawa.jp/jutaku/20160610taishin/bunjyoumansyon-kaisyuu.html": {
    "municipality": "藤沢市",
@@ -1845,7 +1845,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.fujisawa.kanagawa.jp/bousai/bosai/bosai/taisaku/burokkubei.html": {
    "municipality": "藤沢市",
@@ -1866,7 +1866,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.fujisawa.kanagawa.jp/indus1/roudoukaikan/jutakushikin.html": {
    "municipality": "藤沢市",
@@ -1887,7 +1887,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.odawara.kanagawa.jp/field/c-planning/housingp/jyu-jyoho.html": {
    "municipality": "小田原市",
@@ -2004,7 +2004,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.odawara.kanagawa.jp/field/disaster/disaster/nature/seismi/p39576.html": {
    "municipality": "小田原市",
@@ -2025,7 +2025,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.odawara.kanagawa.jp/field/disaster/disaster/nature/seismi/p39595.html": {
    "municipality": "小田原市",
@@ -2070,7 +2070,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.odawara.kanagawa.jp/field/disaster/disaster/nature/seismi/taisin-hojyo.html": {
    "municipality": "小田原市",
@@ -2103,7 +2103,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.odawara.kanagawa.jp/field/disaster/disaster/hojo/kanshin_breaker.html": {
    "municipality": "小田原市",
@@ -2124,7 +2124,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.chigasaki.kanagawa.jp/machidukuri/shidou/1052412.html": {
    "municipality": "茅ヶ崎市",
@@ -2145,7 +2145,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.chigasaki.kanagawa.jp/kankyo/1003449/1034772.html": {
    "municipality": "茅ヶ崎市",
@@ -2153,7 +2153,7 @@
    "hash": "114b59c5bd55aca1afdec1babac4a5367e7cf421c47c6332d2f40bf0565ee4d1",
    "read_on": "2026-11-13",
    "subsidies": [],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.chigasaki.kanagawa.jp/kankyo/1065153/1051865.html": {
    "municipality": "茅ヶ崎市",
@@ -2174,7 +2174,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.zushi.kanagawa.jp/kurashi/sumai/1002149/1002158/1002159.html": {
    "municipality": "逗子市",
@@ -2195,7 +2195,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.zushi.kanagawa.jp/kurashi/kankyo/1007555/1012671/1012700.html": {
    "municipality": "逗子市",
@@ -2216,7 +2216,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.zushi.kanagawa.jp/shisei/toshiseibi/1005762/1005765.html": {
    "municipality": "逗子市",
@@ -2237,7 +2237,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.miura.kanagawa.jp/soshiki/zaisankanrika/zaisankanrika/rifomu/160.html": {
    "municipality": "三浦市",
@@ -2258,7 +2258,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.hadano.kanagawa.jp/kurashi-tetsuzuki/sumai/4/6878.html": {
    "municipality": "秦野市",
@@ -2279,7 +2279,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.hadano.kanagawa.jp/kurashi-tetsuzuki/sumai/4/12593.html": {
    "municipality": "秦野市",
@@ -2324,7 +2324,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.hadano.kanagawa.jp/kurashi-tetsuzuki/seikatsukankyo/5_1/7266.html": {
    "municipality": "秦野市",
@@ -2345,7 +2345,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.hadano.kanagawa.jp/soshiki/8/1055/3/3/3333.html": {
    "municipality": "秦野市",
@@ -2378,7 +2378,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.hadano.kanagawa.jp/soshiki/7/1045/4/shinrin-004/11928.html": {
    "municipality": "秦野市",
@@ -2411,7 +2411,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.hadano.kanagawa.jp/material/files/group/45/youkouzero.pdf": {
    "municipality": "秦野市",
@@ -2456,7 +2456,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.atsugi.kanagawa.jp/soshiki/jutakuka/9/3/20447.html": {
    "municipality": "厚木市",
@@ -2477,7 +2477,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.atsugi.kanagawa.jp/soshiki/jutakuka/9/3/4046.html": {
    "municipality": "厚木市",
@@ -2510,7 +2510,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.atsugi.kanagawa.jp/soshiki/jutakuka/5/2/3629.html": {
    "municipality": "厚木市",
@@ -2531,7 +2531,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.atsugi.kanagawa.jp/soshiki/kenchikushidoka/9/5/4697.html": {
    "municipality": "厚木市",
@@ -2588,7 +2588,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.atsugi.kanagawa.jp/soshiki/kenchikushidoka/9/5/2704.html": {
    "municipality": "厚木市",
@@ -2609,7 +2609,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.atsugi.kanagawa.jp/soshiki/kikikanrika/4/1/306.html": {
    "municipality": "厚木市",
@@ -2630,7 +2630,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.atsugi.kanagawa.jp/bousai/3/1/11547.html": {
    "municipality": "厚木市",
@@ -2651,7 +2651,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.atsugi.kanagawa.jp/soshiki/toshikeikakuka/cn/29353.html": {
    "municipality": "厚木市",
@@ -2696,7 +2696,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.atsugi.kanagawa.jp/soshiki/jutakuka/9/1/8822.html": {
    "municipality": "厚木市",
@@ -2717,7 +2717,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.atsugi.kanagawa.jp/soshiki/kankyoseisakuka/3/8/33951.html": {
    "municipality": "厚木市",
@@ -2738,7 +2738,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.atsugi.kanagawa.jp/soshiki/fukushisomuka/3602.html": {
    "municipality": "厚木市",
@@ -2759,7 +2759,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.yamato.lg.jp/gyosei/soshik/24/sumai/hojo_josei/11916.html": {
    "municipality": "大和市",
@@ -2792,7 +2792,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.yamato.lg.jp/gyosei/soshik/24/sumai/hojo_josei/20402.html": {
    "municipality": "大和市",
@@ -2813,7 +2813,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.yamato.lg.jp/gyosei/soshik/24/sumai/hojo_josei/21788.html": {
    "municipality": "大和市",
@@ -2834,7 +2834,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.yamato.lg.jp/gyosei/soshik/24/sumai/hojo_josei/20460.html": {
    "municipality": "大和市",
@@ -2879,7 +2879,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.yamato.lg.jp/gyosei/soshik/35/taisinka/4796.html": {
    "municipality": "大和市",
@@ -2900,7 +2900,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.yamato.lg.jp/gyosei/soshik/35/taisinka/4799.html": {
    "municipality": "大和市",
@@ -2908,7 +2908,7 @@
    "hash": "07d7111f396713218be88b00ba8a46678bbdfdf0cab19c7281b06434cc360449",
    "read_on": "2026-11-13",
    "subsidies": [],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.yamato.lg.jp/gyosei/soshik/35/taisinka/4702.html": {
    "municipality": "大和市",
@@ -2929,7 +2929,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.yamato.lg.jp/gyosei/soshik/35/taisinka/4792.html": {
    "municipality": "大和市",
@@ -2950,7 +2950,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.yamato.lg.jp/gyosei/soshik/35/taisinka/4708.html": {
    "municipality": "大和市",
@@ -2971,7 +2971,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.yamato.lg.jp/gyosei/soshik/13/koen_ryokuchi/machinoryokuka/5055.html": {
    "municipality": "大和市",
@@ -2992,7 +2992,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.yamato.lg.jp/gyosei/kurashi/bosai_anzenanshin/saigai_bosai/saigainisonaete/hojo_josei/index.html": {
    "municipality": "大和市",
@@ -3061,7 +3061,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.isehara.kanagawa.jp/docs/2026022600033/": {
    "municipality": "伊勢原市",
@@ -3082,7 +3082,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.isehara.kanagawa.jp/docs/2026022600040": {
    "municipality": "伊勢原市",
@@ -3103,7 +3103,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.isehara.kanagawa.jp/docs/2017021300161/": {
    "municipality": "伊勢原市",
@@ -3124,7 +3124,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.isehara.kanagawa.jp/docs/2020012300040/": {
    "municipality": "伊勢原市",
@@ -3145,7 +3145,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.isehara.kanagawa.jp/docs/2013050900198/index.html.r": {
    "municipality": "伊勢原市",
@@ -3166,7 +3166,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.ebina.kanagawa.jp/guide/sumai/jutaku/1017814.html": {
    "municipality": "海老名市",
@@ -3199,7 +3199,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.ebina.kanagawa.jp/guide/sumai/jutaku/1013758.html": {
    "municipality": "海老名市",
@@ -3232,7 +3232,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.ebina.kanagawa.jp/guide/sumai/jutaku/1017796.html": {
    "municipality": "海老名市",
@@ -3253,7 +3253,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.ebina.kanagawa.jp/guide/sumai/jutaku/1003437.html": {
    "municipality": "海老名市",
@@ -3298,7 +3298,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.ebina.kanagawa.jp/guide/sumai/jutaku/1003438.html": {
    "municipality": "海老名市",
@@ -3319,7 +3319,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.ebina.kanagawa.jp/guide/sumai/jutaku/1007682.html": {
    "municipality": "海老名市",
@@ -3340,7 +3340,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.ebina.kanagawa.jp/guide/sumai/taishin/1003436.html": {
    "municipality": "海老名市",
@@ -3361,7 +3361,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.ebina.kanagawa.jp/guide/kurashi/hozen/1016412.html": {
    "municipality": "海老名市",
@@ -3466,7 +3466,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.ebina.kanagawa.jp/guide/kyukyu/bouhan/1007800.html": {
    "municipality": "海老名市",
@@ -3487,7 +3487,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.zama.kanagawa.jp/shisei/seisaku/kankyo/josei/1004178.html": {
    "municipality": "座間市",
@@ -3508,7 +3508,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.zama.kanagawa.jp/kurashi/sumai/josei/1013056.html": {
    "municipality": "座間市",
@@ -3541,7 +3541,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.zama.kanagawa.jp/shisei/seisaku/kankyo/josei/1011832.html": {
    "municipality": "座間市",
@@ -3562,7 +3562,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.zama.kanagawa.jp/shisei/seisaku/kankyo/josei/1011825.html": {
    "municipality": "座間市",
@@ -3583,7 +3583,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.zama.kanagawa.jp/kurashi/sumai/taishin/1002569.html": {
    "municipality": "座間市",
@@ -3628,7 +3628,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.zama.kanagawa.jp/kurashi/sumai/taishin/1002573.html": {
    "municipality": "座間市",
@@ -3649,7 +3649,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.zama.kanagawa.jp/kurashi/sumai/taishin/1002574.html": {
    "municipality": "座間市",
@@ -3670,7 +3670,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.zama.kanagawa.jp/kurashi/sumai/taishin/1002575.html": {
    "municipality": "座間市",
@@ -3691,7 +3691,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.zama.kanagawa.jp/kurashi/koutsu/bouhan/1011901.html": {
    "municipality": "座間市",
@@ -3754,7 +3754,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.minamiashigara.kanagawa.jp/kurashi/gomi/kankyou/p04651.html": {
    "municipality": "南足柄市",
@@ -3762,7 +3762,7 @@
    "hash": "2cc9da8640cc0d8f0b54efc4e8cc75128e4e09cb32ba9b10fa8b0402d2cdc15e",
    "read_on": "2026-11-13",
    "subsidies": [],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.minamiashigara.kanagawa.jp/kurashi/gomi/kankyou/p08554.html": {
    "municipality": "南足柄市",
@@ -3783,7 +3783,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.minamiashigara.kanagawa.jp/kurashi/sumai/house/p05283.html": {
    "municipality": "南足柄市",
@@ -3840,7 +3840,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.minamiashigara.kanagawa.jp/kurashi/sumai/house/p08630.html": {
    "municipality": "南足柄市",
@@ -3861,7 +3861,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.minamiashigara.kanagawa.jp/kurashi/sumai/house/p08567.html": {
    "municipality": "南足柄市",
@@ -3882,7 +3882,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.minamiashigara.kanagawa.jp/kurashi/gomi/kankyou/jyoukasou_hojyokin.html": {
    "municipality": "南足柄市",
@@ -3903,7 +3903,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.minamiashigara.kanagawa.jp/kurashi/fukushi/jyosei/jyutaku_setubi_jyosei.html": {
    "municipality": "南足柄市",
@@ -3924,7 +3924,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.minamiashigara.kanagawa.jp/teiju/ijyu-shien/p08275.html": {
    "municipality": "南足柄市",
@@ -3945,7 +3945,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.minamiashigara.kanagawa.jp/teiju/ijyu-shien/p08503.html": {
    "municipality": "南足柄市",
@@ -3990,7 +3990,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.ayase.kanagawa.jp/soshiki/kankyohozenka/zumai/1/24031.html": {
    "municipality": "綾瀬市",
@@ -4011,7 +4011,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.ayase.kanagawa.jp/soshiki/kankyohozenka/zumai/1/24034.html": {
    "municipality": "綾瀬市",
@@ -4032,7 +4032,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.ayase.kanagawa.jp/soshiki/toshikeikakuka/zumai/2/2/5801.html": {
    "municipality": "綾瀬市",
@@ -4113,7 +4113,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.city.ayase.kanagawa.jp/soshiki/toshikeikakuka/zumai/2/1/5871.html": {
    "municipality": "綾瀬市",
@@ -4134,7 +4134,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.hayama.lg.jp/soshiki/sangyou/shoko/1746.html": {
    "municipality": "葉山町",
@@ -4155,7 +4155,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.hayama.lg.jp/soshiki/fukushi/shakaifukushi/15205.html": {
    "municipality": "葉山町",
@@ -4176,7 +4176,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.hayama.lg.jp/soshiki/kankyou/1/4_1/1204.html": {
    "municipality": "葉山町",
@@ -4209,7 +4209,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.hayama.lg.jp/soshiki/kankyou/1/1_2/1179.html": {
    "municipality": "葉山町",
@@ -4230,7 +4230,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.hayama.lg.jp/soshiki/kankyou/1/1_2/1180.html": {
    "municipality": "葉山町",
@@ -4251,7 +4251,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.hayama.lg.jp/soshiki/kankyou/1/1_2/1181.html": {
    "municipality": "葉山町",
@@ -4272,7 +4272,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.hayama.lg.jp/soshiki/toshi/9131.html": {
    "municipality": "葉山町",
@@ -4293,7 +4293,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.hayama.lg.jp/soshiki/bousaianzen/2/3/13200.html": {
    "municipality": "葉山町",
@@ -4314,7 +4314,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.hayama.lg.jp/soshiki/sangyou/shoko/14087.html": {
    "municipality": "葉山町",
@@ -4443,7 +4443,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.samukawa.kanagawa.jp/soshiki/toshikensetsu/toshikeikaku/tokei_kaihatsu/info/jutaku/1361756345001.html": {
    "municipality": "寒川町",
@@ -4488,7 +4488,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.samukawa.kanagawa.jp/soshiki/kankyokeizai/sangyoshinko/shokorosei/info/shougyou/hozyosien/juutakurifomuhojo.html": {
    "municipality": "寒川町",
@@ -4509,7 +4509,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.samukawa.kanagawa.jp/soshiki/toshikensetsu/toshikeikaku/tokei_kaihatsu/info/jutaku/1543543147616.html": {
    "municipality": "寒川町",
@@ -4530,7 +4530,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.samukawa.kanagawa.jp/soshiki/kankyokeizai/kankyo/kankyohozen/info/energy/hozyokin/14806.html": {
    "municipality": "寒川町",
@@ -4551,7 +4551,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.samukawa.kanagawa.jp/soshiki/chomin/chouminanzen/kikikanri/info/saigainisonaete/husuigai/1429229542017.html": {
    "municipality": "寒川町",
@@ -4572,7 +4572,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.samukawa.kanagawa.jp/soshiki/kankyokeizai/sangyoshinko/shokorosei/info/syurokinrosien/hozyosien/1396311298316.html": {
    "municipality": "寒川町",
@@ -4593,7 +4593,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.samukawa.kanagawa.jp/kurashi_tetsuzuki/hojokin_joseikin/kinryosya/zyutaku/index.html": {
    "municipality": "寒川町",
@@ -4638,7 +4638,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.oiso.kanagawa.jp/soshiki/sangyokankoubu/kankyo/tanto/kankyou/seisaku/1395646408781.html": {
    "municipality": "大磯町",
@@ -4659,7 +4659,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.oiso.kanagawa.jp/soshiki/sangyokankoubu/kankyo/tanto/kankyou/seisaku/25063.html": {
    "municipality": "大磯町",
@@ -4680,7 +4680,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.oiso.kanagawa.jp/soshiki/toshikensetsubu/toshi/tanto/kenchikubutsu/taishin/12066.html": {
    "municipality": "大磯町",
@@ -4737,7 +4737,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.oiso.kanagawa.jp/soshiki/toshikensetsubu/toshi/tanto/kenchikubutsu/blockhei/12043.html": {
    "municipality": "大磯町",
@@ -4758,7 +4758,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.oiso.kanagawa.jp/soshiki/toshikensetsubu/toshi/tanto/kouen_ryokuka/ryokuka/ryokukasuisin/1377750523869.html": {
    "municipality": "大磯町",
@@ -4779,7 +4779,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.oiso.kanagawa.jp/soshiki/toshikensetsubu/toshi/tanto/sumasagasi_akiya/24747.html": {
    "municipality": "大磯町",
@@ -4812,7 +4812,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.ninomiya.kanagawa.jp/0000000115.html": {
    "municipality": "二宮町",
@@ -4845,7 +4845,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.ninomiya.kanagawa.jp/0000000113.html": {
    "municipality": "二宮町",
@@ -4866,7 +4866,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.ninomiya.kanagawa.jp/0000001761.html": {
    "municipality": "二宮町",
@@ -4887,7 +4887,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.ninomiya.kanagawa.jp/0000001420.html": {
    "municipality": "二宮町",
@@ -4908,7 +4908,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.ninomiya.kanagawa.jp/0000001381.html": {
    "municipality": "二宮町",
@@ -4929,7 +4929,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.ninomiya.kanagawa.jp/0000000106.html": {
    "municipality": "二宮町",
@@ -4950,7 +4950,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.ninomiya.kanagawa.jp/0000003510.html": {
    "municipality": "二宮町",
@@ -4958,7 +4958,7 @@
    "hash": "235562b0c3d4bcdf856f1f07f74d27694b80229a677f4a50162f87290dae0a8f",
    "read_on": "2026-11-13",
    "subsidies": [],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.ninomiya.kanagawa.jp/mirai_dukuri/0000001831.html": {
    "municipality": "二宮町",
@@ -4985,7 +4985,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.ninomiya.kanagawa.jp/0000003583.html": {
    "municipality": "二宮町",
@@ -5006,7 +5006,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.nakai.kanagawa.jp/soshiki/kikakukaseisakuhan/sumai/1/1/404.html": {
    "municipality": "中井町",
@@ -5027,7 +5027,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.nakai.kanagawa.jp/soshiki/machiseibikakeikakuhan/anzen_anshin/1/605.html": {
    "municipality": "中井町",
@@ -5060,7 +5060,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.nakai.kanagawa.jp/soshiki/machiseibikakeikakuhan/anzen_anshin/1/737.html": {
    "municipality": "中井町",
@@ -5117,7 +5117,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.nakai.kanagawa.jp/soshiki/kankyojogesuidokakankyohan/kankyohozen/692.html": {
    "municipality": "中井町",
@@ -5162,7 +5162,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.nakai.kanagawa.jp/soshiki/chiikibosaikachiikijohohan/kekkon/2649.html": {
    "municipality": "中井町",
@@ -5183,7 +5183,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.nakai.kanagawa.jp/soshiki/fukushikafukushihan/shogaifukushi/785.html": {
    "municipality": "中井町",
@@ -5204,7 +5204,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.nakai.kanagawa.jp/shigoto_sangyo/koyo_shugyo/1317.html": {
    "municipality": "中井町",
@@ -5225,7 +5225,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.nakai.kanagawa.jp/soshiki/machiseibikakeikakuhan/sumai/598.html": {
    "municipality": "中井町",
@@ -5366,7 +5366,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.oi.kanagawa.jp/site/iju/jutakushutoku-hojokin.html": {
    "municipality": "大井町",
@@ -5387,7 +5387,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.oi.kanagawa.jp/site/iju/sansedaidoukyo-juutakukaishu-hojokin.html": {
    "municipality": "大井町",
@@ -5408,7 +5408,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.oi.kanagawa.jp/soshiki/9/dannetsu.html": {
    "municipality": "大井町",
@@ -5429,7 +5429,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.oi.kanagawa.jp/soshiki/9/smartenergy.html": {
    "municipality": "大井町",
@@ -5474,7 +5474,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.oi.kanagawa.jp/soshiki/11/mokuzoutaishinhozyo.html": {
    "municipality": "大井町",
@@ -5495,7 +5495,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.oi.kanagawa.jp/soshiki/11/mokuzoutaishinkaisyu.html": {
    "municipality": "大井町",
@@ -5516,7 +5516,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.oi.kanagawa.jp/soshiki/11/blockhojo.html": {
    "municipality": "大井町",
@@ -5537,7 +5537,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://town.matsuda.kanagawa.jp/soshiki/10/moku-jyuutakuhojyo2.html": {
    "municipality": "松田町",
@@ -5570,7 +5570,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://town.matsuda.kanagawa.jp/soshiki/10/kikennburokku01.html": {
    "municipality": "松田町",
@@ -5591,7 +5591,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://town.matsuda.kanagawa.jp/soshiki/11/smart.html": {
    "municipality": "松田町",
@@ -5612,7 +5612,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://town.matsuda.kanagawa.jp/site/teiju-syoushi/akiya-kaisyuu-hojyo.html": {
    "municipality": "松田町",
@@ -5633,7 +5633,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://town.matsuda.kanagawa.jp/site/teiju-syoushi/yadorikiiju.html": {
    "municipality": "松田町",
@@ -5654,7 +5654,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://town.matsuda.kanagawa.jp/site/teiju-syoushi/yachinhojo.html": {
    "municipality": "松田町",
@@ -5675,7 +5675,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://town.matsuda.kanagawa.jp/site/teiju-syoushi/yachinhojo-gakusei.html": {
    "municipality": "松田町",
@@ -5696,7 +5696,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://town.matsuda.kanagawa.jp/soshiki/4/hisaijyutakutaisin.html": {
    "municipality": "松田町",
@@ -5717,7 +5717,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.yamakita.kanagawa.jp/0000002915.html": {
    "municipality": "山北町",
@@ -5750,7 +5750,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.kaisei.kanagawa.jp/info/506": {
    "municipality": "開成町",
@@ -5807,7 +5807,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.kaisei.kanagawa.jp/info/489": {
    "municipality": "開成町",
@@ -5840,7 +5840,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.kaisei.kanagawa.jp/info/77": {
    "municipality": "開成町",
@@ -5861,7 +5861,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.kaisei.kanagawa.jp/div/kikaku/pdf/ZCCR5/1ZEHp.pdf": {
    "municipality": "開成町",
@@ -5906,7 +5906,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.kaisei.kanagawa.jp/div/suidou/pdf/zerocarbon/SH-p.pdf": {
    "municipality": "開成町",
@@ -5927,7 +5927,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.hakone.kanagawa.jp/www/contents/1100000000498/index.html": {
    "municipality": "箱根町",
@@ -5948,7 +5948,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.hakone.kanagawa.jp/www/contents/1100000000572/index.html": {
    "municipality": "箱根町",
@@ -6005,7 +6005,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.hakone.kanagawa.jp/www/contents/1100000000908/index.html": {
    "municipality": "箱根町",
@@ -6026,7 +6026,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.hakone.kanagawa.jp/www/contents/1100000002059/index.html": {
    "municipality": "箱根町",
@@ -6071,7 +6071,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.hakone.kanagawa.jp/www/contents/1100000000834/index.html": {
    "municipality": "箱根町",
@@ -6092,7 +6092,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.manazuru.kanagawa.jp/soshiki/toshikeikaku/toshikeikaku/4296.html": {
    "municipality": "真鶴町",
@@ -6113,7 +6113,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "http://www.town.manazuru.kanagawa.jp/kurashsi_tetsuduki/sumaikurashi/541.html": {
    "municipality": "真鶴町",
@@ -6146,7 +6146,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.yugawara.kanagawa.jp/soshiki/17/14319.html": {
    "municipality": "湯河原町",
@@ -6191,7 +6191,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.yugawara.kanagawa.jp/soshiki/7/1245.html": {
    "municipality": "湯河原町",
@@ -6212,7 +6212,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.yugawara.kanagawa.jp/soshiki/5/1070.html": {
    "municipality": "湯河原町",
@@ -6257,7 +6257,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.yugawara.kanagawa.jp/soshiki/7/1244.html": {
    "municipality": "湯河原町",
@@ -6278,7 +6278,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.yugawara.kanagawa.jp/soshiki/13/1570.html": {
    "municipality": "湯河原町",
@@ -6299,7 +6299,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.aikawa.kanagawa.jp/kurashi/juutaku/7005.html": {
    "municipality": "愛川町",
@@ -6368,7 +6368,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.aikawa.kanagawa.jp/kurashi/gomi_kankyou/solar/index.html": {
    "municipality": "愛川町",
@@ -6376,7 +6376,7 @@
    "hash": "638f7c8706b8a72c60488fa94be0a7691e12db69c46a2e5795b4b62d261b027a",
    "read_on": "2026-11-13",
    "subsidies": [],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.aikawa.kanagawa.jp/soshiki/kensetsu/toshi/toshi/info/taisin/1425007847294.html": {
    "municipality": "愛川町",
@@ -6409,7 +6409,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.aikawa.kanagawa.jp/soshiki/kensetsu/toshi/toshi/info/taisin/1537848393006.html": {
    "municipality": "愛川町",
@@ -6430,7 +6430,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.aikawa.kanagawa.jp/kurashi/juutaku/15119.html": {
    "municipality": "愛川町",
@@ -6463,7 +6463,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.aikawa.kanagawa.jp/soshiki/kankyou_keizai/kankyo/kankyo/info/seikatsu_kankyou/akiya/1427805719711.html": {
    "municipality": "愛川町",
@@ -6484,7 +6484,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.aikawa.kanagawa.jp/soshiki/kankyou_keizai/kankyo/kankyo/info/seikatsu_kankyou/akiya/1427805820605.html": {
    "municipality": "愛川町",
@@ -6505,7 +6505,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.aikawa.kanagawa.jp/soshiki/kankyou_keizai/kankyo/kankyo/info/seikatsu_kankyou/akiya/1464142594217.html": {
    "municipality": "愛川町",
@@ -6526,7 +6526,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.aikawa.kanagawa.jp/soshiki/kankyou_keizai/kankyo/kankyo/info/seikatsu_kankyou/akiya/1654220181925.html": {
    "municipality": "愛川町",
@@ -6547,7 +6547,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.aikawa.kanagawa.jp/soshiki/kensetsu/douro/kanri/info/douro/1648623420126.html": {
    "municipality": "愛川町",
@@ -6568,7 +6568,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.aikawa.kanagawa.jp/bousai/bou/sonae/18260.html": {
    "municipality": "愛川町",
@@ -6589,7 +6589,7 @@
      "before_work": true
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.aikawa.kanagawa.jp/soshiki/soumu1/juminkyoudo/kotsubouhan/info/bouhan/16800.html": {
    "municipality": "愛川町",
@@ -6610,7 +6610,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   },
   "https://www.town.aikawa.kanagawa.jp/soshiki/minsei/kosodate_shien/kodomofukushi/info/teate/1492588731643.html": {
    "municipality": "愛川町",
@@ -6631,7 +6631,7 @@
      "before_work": false
     }
    ],
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to "
   }
  }
 }

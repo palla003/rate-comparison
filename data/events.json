@@ -3432,5 +3432,264 @@
    "bank": "あおぞら銀行 BANK"
   },
   "prev": 0.75
+ },
+ {
+  "date": "2026-11-14",
+  "type": "new",
+  "offer": {
+   "product": "BANK 円普通預金",
+   "kind": "普通預金",
+   "term_months": null,
+   "rate_pct": 1.2,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 1,
+   "conditions": "BANK口座限定・預入金額100万円以下・変動金利",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "あおぞら銀行 BANK"
+  }
+ },
+ {
+  "date": "2026-11-14",
+  "type": "new",
+  "offer": {
+   "product": "BANK 円普通預金",
+   "kind": "普通預金",
+   "term_months": null,
+   "rate_pct": 0.75,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 1000001,
+   "conditions": "BANK口座限定・預入金額100万円超・変動金利",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "あおぞら銀行 BANK"
+  }
+ },
+ {
+  "date": "2026-11-14",
+  "type": "new",
+  "offer": {
+   "product": "スーパー定期（有人店舗）",
+   "kind": "定期預金",
+   "term_months": 1,
+   "rate_pct": 0.63,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 1,
+   "conditions": "有人店舗口座限定・固定金利・店頭表示利率・1ヶ月単利型",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "あおぞら銀行 BANK"
+  }
+ },
+ {
+  "date": "2026-11-14",
+  "type": "new",
+  "offer": {
+   "product": "スーパー定期（有人店舗）",
+   "kind": "定期預金",
+   "term_months": 3,
+   "rate_pct": 0.63,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 1,
+   "conditions": "有人店舗口座限定・固定金利・店頭表示利率・3ヶ月単利型",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "あおぞら銀行 BANK"
+  }
+ },
+ {
+  "date": "2026-11-14",
+  "type": "new",
+  "offer": {
+   "product": "スーパー定期（有人店舗）",
+   "kind": "定期預金",
+   "term_months": 6,
+   "rate_pct": 0.63,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 1,
+   "conditions": "有人店舗口座限定・固定金利・店頭表示利率・6ヶ月単利型",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "あおぞら銀行 BANK"
+  }
+ },
+ {
+  "date": "2026-11-14",
+  "type": "new",
+  "offer": {
+   "product": "スーパー定期（有人店舗）",
+   "kind": "定期預金",
+   "term_months": 12,
+   "rate_pct": 0.7,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 1,
+   "conditions": "有人店舗口座限定・固定金利・店頭表示利率・1年単利型",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "あおぞら銀行 BANK"
+  }
+ },
+ {
+  "date": "2026-11-14",
+  "type": "new",
+  "offer": {
+   "product": "スーパー定期（有人店舗）",
+   "kind": "定期預金",
+   "term_months": 24,
+   "rate_pct": 0.8,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 1,
+   "conditions": "有人店舗口座限定・固定金利・店頭表示利率・2年単利型",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "あおぞら銀行 BANK"
+  }
+ },
+ {
+  "date": "2026-11-14",
+  "type": "new",
+  "offer": {
+   "product": "スーパー定期（有人店舗）",
+   "kind": "定期預金",
+   "term_months": 36,
+   "rate_pct": 0.9,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 1,
+   "conditions": "有人店舗口座限定・固定金利・店頭表示利率・3年単利・半年複利型",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "あおぞら銀行 BANK"
+  }
+ },
+ {
+  "date": "2026-11-14",
+  "type": "new",
+  "offer": {
+   "product": "スーパー定期（有人店舗）",
+   "kind": "定期預金",
+   "term_months": 48,
+   "rate_pct": 1.0,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 1,
+   "conditions": "有人店舗口座限定・固定金利・店頭表示利率・4年単利・半年複利型",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "あおぞら銀行 BANK"
+  }
+ },
+ {
+  "date": "2026-11-14",
+  "type": "new",
+  "offer": {
+   "product": "スーパー定期（有人店舗）",
+   "kind": "定期預金",
+   "term_months": 60,
+   "rate_pct": 1.1,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 1,
+   "conditions": "有人店舗口座限定・固定金利・店頭表示利率・5年単利・半年複利型",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "あおぞら銀行 BANK"
+  }
+ },
+ {
+  "date": "2026-11-14",
+  "type": "new",
+  "offer": {
+   "product": "コンティニューボンド２０２６",
+   "kind": "定期預金",
+   "term_months": 12,
+   "rate_pct": 1.55,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 3000000,
+   "conditions": "おかしんインターネット支店限定。スーパー定期1年自動継続。300万円以上1円単位",
+   "start_date": "2026-11-02",
+   "end_date": "2027-03-31",
+   "quota": "合計200億円",
+   "bank": "岡崎信用金庫 おかしんインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-14",
+  "type": "new",
+  "offer": {
+   "product": "コンティニューボンド２０２６",
+   "kind": "定期預金",
+   "term_months": 24,
+   "rate_pct": 1.85,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 3000000,
+   "conditions": "おかしんインターネット支店限定。スーパー定期2年自動継続。300万円以上1円単位",
+   "start_date": "2026-11-02",
+   "end_date": "2027-03-31",
+   "quota": "合計200億円",
+   "bank": "岡崎信用金庫 おかしんインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-14",
+  "type": "new",
+  "offer": {
+   "product": "コンティニューボンド２０２６",
+   "kind": "定期預金",
+   "term_months": 36,
+   "rate_pct": 1.9,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 3000000,
+   "conditions": "おかしんインターネット支店限定。スーパー定期3年自動継続。300万円以上1円単位",
+   "start_date": "2026-11-02",
+   "end_date": "2027-03-31",
+   "quota": "合計200億円",
+   "bank": "岡崎信用金庫 おかしんインターネット支店"
+  }
+ },
+ {
+  "date": "2026-11-14",
+  "type": "gone",
+  "key": "岡崎信用金庫 おかしんインターネット支店|コンティニューボンド２０２６ 2年|24"
+ },
+ {
+  "date": "2026-11-14",
+  "type": "gone",
+  "key": "あおぞら銀行 BANK|BANK 普通預金|None"
+ },
+ {
+  "date": "2026-11-14",
+  "type": "gone",
+  "key": "岡崎信用金庫 おかしんインターネット支店|コンティニューボンド２０２６ 1年|12"
+ },
+ {
+  "date": "2026-11-14",
+  "type": "gone",
+  "key": "山陰合同銀行 DanDanBANK|DanDan普通預金（通常金利）|None"
+ },
+ {
+  "date": "2026-11-14",
+  "type": "gone",
+  "key": "岡崎信用金庫 おかしんインターネット支店|コンティニューボンド２０２６ 3年|36"
  }
 ]
