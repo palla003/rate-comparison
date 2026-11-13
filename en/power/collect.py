@@ -55,7 +55,7 @@ def capacity(title: str, vtitle: str, body: str) -> tuple[float | None, str]:
 
 def model_key(brand: str, title: str) -> str:
     t = title.lower().replace(brand.lower(), "")
-    t = re.sub(r"\(.*?\)|portable power station|solar generator|power station|series|home backup|\|.*$|[^a-z0-9 ]", " ", t)
+    t = re.sub(r"\(.*?\)|\bexplorer\b|portable power station|solar generator|power station|series|home backup|\|.*$|[^a-z0-9 ]", " ", t)
     return " ".join(t.split())
 
 
@@ -89,7 +89,7 @@ def main():
                     continue
                 body = p.get("body_html") or ""
                 lfp = bool(re.search(r"lifepo4|\blfp\b", body + title, re.I))
-                if re.search(r"solar panel|\bpanel\b|\+|bundle|\bkit\b", title, re.I):
+                if re.search(r"solar panel|\bpanels?\b|\+|bundle|\bkit\b", title, re.I):
                     continue  # 太陽光パネル付きセットは本体の価格比較にならないので載せない
                 pre = bool(re.search(r"pre-?order", title, re.I))
                 for v in p.get("variants", []):
