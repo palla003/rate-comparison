@@ -118,6 +118,7 @@ def main():
 
     page = f"""<!doctype html><html lang="ja"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="fo-verify" content="eb82f8ff-a67f-4d5b-97ca-a39dc87fbb6e" />
 <title>{e(SITE_NAME)}({jdate(checked)}の金利)</title>
 <meta name="description" content="{e(desc)}">{canon}
 {FONTS_LINK}
