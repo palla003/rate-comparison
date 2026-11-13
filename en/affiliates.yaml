@@ -1,0 +1,14 @@
+# ASPに承認されたら、ブランド(提供会社)ごとにリンクの型を書く。{url} に商品ページのURLが入る。
+# 空のあいだは普通のリンク(収益なし)。例:
+# EcoFlow:
+#   template: "https://ecoflow.pxf.io/c/XXXX/YYYY/ZZZZ?u={url}"
+EcoFlow: {}
+Jackery: {}
+Anker SOLIX: {}
+BLUETTI: {}
+Vultr:
+  # Vultrは紹介コード方式。https://www.vultr.com/?ref=XXXX
+  template: ""
+Linode: {}
+DigitalOcean: {}
+Hetzner: {}

@@ -1,0 +1,41 @@
+# 英語サイト(en/)を変えたブランチで、価格取得とページ作成を試す(公開はしない)。結果はArtifactsの en-test で確認。
+name: en-test
+on:
+  push:
+    branches: ["claude/**"]
+    paths: ["en/**", ".github/workflows/en-test.yml"]
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python en/power/collect.py
+        continue-on-error: true
+      - run: python en/vps/collect.py
+        continue-on-error: true
+      - run: python en/build.py
+      - name: 結果の要約
+        run: |
+          python - <<'PY'
+          import json
+          for f in ("data/en_power.json", "data/en_vps.json"):
+              try:
+                  d = json.load(open(f))
+              except FileNotFoundError:
+                  print(f, "missing"); continue
+              print(f, d["status"], len(d["items"]))
+              for r in d["items"][:40]:
+                  print("  ", {k: r.get(k) for k in ("brand", "provider", "name", "variant", "plan", "price", "monthly", "wh", "wh_src", "w", "lfp", "kit", "vcpu", "ram_gb")})
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: en-test
+          path: |
+            site/en
+            data/en_*.json

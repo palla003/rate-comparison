@@ -1,0 +1,19 @@
+# Shopify公式ストア(US)。products.json を robots.txt に従って読む。取れない店は自動で飛ばす。
+- brand: EcoFlow
+  base: https://us.ecoflow.com
+- brand: Jackery
+  base: https://www.jackery.com
+- brand: Anker SOLIX
+  base: https://www.ankersolix.com
+- brand: BLUETTI
+  base: https://www.bluettipower.com
+- brand: ALLPOWERS
+  base: https://iallpowers.com
+- brand: VTOMAN
+  base: https://vtoman.com
+- brand: Goal Zero
+  base: https://goalzero.com
+- brand: OUKITEL
+  base: https://oukitel.com
+- brand: PECRON
+  base: https://www.pecron.com
