@@ -10,6 +10,7 @@ from common import SITE, SITE_URL, e, load, page, affiliate  # noqa: E402
 
 HERE = pathlib.Path(__file__).resolve().parent
 LINKS = yaml.safe_load((HERE / "affiliates.yaml").read_text()) or {}
+SITE_INFO = yaml.safe_load((HERE / "site.yaml").read_text()) or {}
 
 
 def money(x, d=0):
@@ -110,6 +111,45 @@ def build_vps():
     return len(items)
 
 
+def build_static(checked: str):
+    email = (SITE_INFO.get("contact_email") or "").strip()
+    contact = (f"<p>Questions, corrections or a store we should add? Email <a href='mailto:{e(email)}'>{e(email)}</a>. "
+               "Price errors are usually fixed by the next morning's update.</p>") if email else \
+              "<p>Spotted a wrong price or capacity? Corrections are usually fixed by the next morning's update.</p>"
+    about = f"""<section class="lead"><div><h1>About Price Per Unit</h1>
+<p>Price Per Unit is a small, independent site that answers one question for a few product types: how much do you pay for what you get.</p></div></section>
+<div class="prose">
+<h2>What we do</h2>
+<p>Every morning a script reads current prices from each seller's own public product data or public pricing API, works out the price per unit
+(dollars per watt-hour for power stations, dollars per GB of RAM for cloud servers) and rebuilds the tables. There is no editorial ranking:
+rows are sorted by the numbers only, and you can re-sort or filter them yourself.</p>
+<h2>What we don't do</h2>
+<p>We don't accept payment for placement, we don't write sponsored reviews, and we don't hide products that have no affiliate program.
+When a capacity can't be read reliably from a store's data, we leave the product out rather than guess.</p>
+<h2>How we make money</h2>
+<p>Some links are affiliate links. If you buy through them, the seller may pay us a commission at no extra cost to you.</p>
+<h2>Contact</h2>
+{contact}
+</div>"""
+    privacy = """<section class="lead"><div><h1>Privacy policy</h1><p>Short version: we don't collect personal data.</p></div></section>
+<div class="prose">
+<h2>What this site collects</h2>
+<p>This site has no accounts, forms, comments, analytics or advertising trackers of its own, and sets no cookies of its own.</p>
+<h2>Third parties</h2>
+<p>The site is hosted on GitHub Pages, which may log basic request data such as IP addresses for security
+(see GitHub's privacy statement). Fonts are loaded from Google Fonts, which receives your IP address when the font files are requested.</p>
+<p>When you click an affiliate link and visit a store, that store or its affiliate network may set cookies to record that you came from this site.
+Their own privacy policies apply on their sites.</p>
+<h2>Changes</h2>
+<p>If this policy changes, the updated version will be posted on this page.</p>
+</div>"""
+    for path, title, desc, body in (("about/", "About Price Per Unit", "Who runs Price Per Unit, how the tables are made, and how to get in touch.", about),
+                                    ("privacy/", "Privacy Policy – Price Per Unit", "Price Per Unit collects no personal data.", privacy)):
+        out = SITE / path
+        out.mkdir(parents=True, exist_ok=True)
+        (out / "index.html").write_text(page(title, desc, path, body, checked), encoding="utf-8")
+
+
 def main():
     n_power, n_vps = build_power(), build_vps()
     checked = max((load(f, {}).get("checked", "") for f in ("en_power.json", "en_vps.json")), default="")
@@ -120,6 +160,7 @@ def main():
         cards += f"<a href='vps/'><h2>VPS by $/GB</h2><p>{n_vps} cloud server plans, ranked by monthly price, per vCPU and per GB of RAM.</p></a>"
     body = f"<section class='lead'><div><h1>Price per unit, checked every morning</h1><p>Plain tables that answer one question: how much do you pay for what you get.</p></div></section><div class='cards'>{cards}</div>"
     SITE.mkdir(parents=True, exist_ok=True)
+    build_static(checked)
     (SITE / "index.html").write_text(page("Price Per Unit – daily price tables", "Daily price-per-unit tables for portable power stations and VPS plans.", "", body, checked), encoding="utf-8")
     print(f"site/en: power={n_power} vps={n_vps}")
 

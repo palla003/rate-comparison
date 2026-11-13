@@ -127,6 +127,7 @@ h1,h2,h3{font-family:var(--display);margin:0}
 .tag.low{color:var(--deal)}
 .foot{margin-top:3rem;padding-block:1.5rem 3rem;border-top:3px double var(--rule-2);display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem;font-size:.875rem;color:var(--ink-2)}
 .foot h3{font-size:1rem;margin-bottom:.4rem}.foot p{margin:0 0 .5rem}
+.prose{max-width:40rem;padding-bottom:1rem}.prose h2{font-size:1.25rem;margin:1.75rem 0 .5rem}.prose p{margin:0 0 .75rem}
 .cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem;padding-block:2rem}
 .cards a{display:block;border-top:3px solid var(--ink);padding-top:1rem;color:var(--ink);text-decoration:none}
 .cards h2{font-size:1.5rem}.cards p{color:var(--ink-2);margin:.5rem 0 0}
@@ -166,9 +167,10 @@ def page(title: str, desc: str, path: str, body: str, updated: str, jsonld: str 
 <title>{e(title)}</title><meta name="description" content="{e(desc)}">{canon}
 {FONTS}<style>{CSS}</style>{jsonld}</head><body><div class="wrap">
 <header class="mast"><a class="name" href="{'../' if path else './'}">Price Per Unit</a>
-<nav><a href="{'../' if path else ''}power/">Power stations</a><a href="{'../' if path else ''}vps/">VPS</a></nav>
+<nav><a href="{'../' if path else ''}power/">Power stations</a><a href="{'../' if path else ''}vps/">VPS</a><a href="{'../' if path else ''}about/">About</a></nav>
 <span class="meta">Updated {e(updated)} UTC</span></header>
 {body}
 <footer class="foot"><div><h3>How this works</h3><p>Prices are read once a day from each store's public product data or public pricing API. Prices change often; always confirm on the store's page before buying.</p></div>
-<div><h3>Affiliate disclosure</h3><p>Some links are affiliate links. If you buy through them we may earn a commission at no extra cost to you. It never changes the order of this table, which is sorted by numbers only.</p></div></footer>
+<div><h3>Affiliate disclosure</h3><p>Some links are affiliate links. If you buy through them we may earn a commission at no extra cost to you. It never changes the order of this table, which is sorted by numbers only.</p>
+<p><a href="{'../' if path else ''}about/">About &amp; contact</a> · <a href="{'../' if path else ''}privacy/">Privacy policy</a></p></div></footer>
 </div>{SORT_JS}</body></html>"""

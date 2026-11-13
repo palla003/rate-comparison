@@ -1,0 +1,3 @@
+# 英語サイトの基本情報。contact_email を入れると About ページに連絡先が出る(ASP審査で求められることが多い)。
+name: Price Per Unit
+contact_email: ""
