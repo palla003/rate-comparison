@@ -1,0 +1,42 @@
+# 英語サイト(en/)を変えたブランチで、価格取得とページ作成を試す(公開はしない)。結果はArtifactsの en-test で確認。
+name: en-test
+on:
+  push:
+    branches: ["claude/**"]
+    paths: ["en/**", ".github/workflows/en-test.yml"]
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r requirements.txt
+      - run: python en/power/collect.py
+        continue-on-error: true
+      - run: python en/vps/collect.py
+        continue-on-error: true
+      - run: python en/build.py
+      - name: 結果の要約
+        run: |
+          python - <<'PY'
+          import json
+          for f in ("data/en_power.json", "data/en_vps.json"):
+              try:
+                  d = json.load(open(f))
+              except FileNotFoundError:
+                  print(f, "missing"); continue
+              print(f, d["status"], len(d["items"]))
+              for r in d["items"]:
+                  if "wh" in r:
+                      print(f"  {r['price']/r['wh']:.3f} {r['price']:>7} {r['wh']:>7.0f}Wh {r['wh_src'][:4]} {r['w']} lfp={int(r['lfp'])} {r['brand'][:8]:8} {r['name'][:70]} | {r['variant'][:30]}")
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: en-test
+          path: |
+            site/en
+            data/en_*.json

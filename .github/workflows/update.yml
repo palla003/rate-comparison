@@ -26,6 +26,9 @@ jobs:
     env:
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+      DO_TOKEN: ${{ secrets.DO_TOKEN }}
+      HCLOUD_TOKEN: ${{ secrets.HCLOUD_TOKEN }}
+      EN_SITE_URL: ${{ vars.EN_SITE_URL }}
       X_API_KEY: ${{ secrets.X_API_KEY }}
       X_API_SECRET: ${{ secrets.X_API_SECRET }}
       X_ACCESS_TOKEN: ${{ secrets.X_ACCESS_TOKEN }}
@@ -63,11 +66,19 @@ jobs:
           python hojokin/discover.py
           python hojokin/collect.py
 
+      - name: 英語サイト(蓄電池・VPS)の価格を集める
+        id: en
+        continue-on-error: true
+        run: |
+          python en/power/collect.py
+          python en/vps/collect.py
+
       - name: サイト作成
         run: |
           python hojokin/build.py
           python build_site.py
           python furusato/build.py
+          python en/build.py
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
@@ -98,7 +109,7 @@ jobs:
           fi
 
       - name: 異常があれば失敗にする
-        if: steps.monitor.outcome == 'failure' || steps.post.outcome == 'failure' || steps.furusato.outcome == 'failure' || steps.hatena.outcome == 'failure' || steps.hojokin.outcome == 'failure'
+        if: steps.monitor.outcome == 'failure' || steps.post.outcome == 'failure' || steps.furusato.outcome == 'failure' || steps.hatena.outcome == 'failure' || steps.hojokin.outcome == 'failure' || steps.en.outcome == 'failure'
         run: |
-          echo "::error::monitor=${{ steps.monitor.outcome }} furusato=${{ steps.furusato.outcome }} hatena=${{ steps.hatena.outcome }} hojokin=${{ steps.hojokin.outcome }} post=${{ steps.post.outcome }}。ログとDiscordの通知を確認してください"
+          echo "::error::monitor=${{ steps.monitor.outcome }} furusato=${{ steps.furusato.outcome }} hatena=${{ steps.hatena.outcome }} hojokin=${{ steps.hojokin.outcome }} en=${{ steps.en.outcome }} post=${{ steps.post.outcome }}。ログとDiscordの通知を確認してください"
           exit 1

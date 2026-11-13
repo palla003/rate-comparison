@@ -1,0 +1,14 @@
+# Shopify公式ストア(US)。products.json を robots.txt に従って読む。取れない店は自動で飛ばす。
+- brand: EcoFlow
+  base: https://us.ecoflow.com
+- brand: Jackery
+  base: https://www.jackery.com
+- brand: ALLPOWERS
+  base: https://iallpowers.com
+- brand: VTOMAN
+  base: https://vtoman.com
+- brand: Goal Zero
+  base: https://goalzero.com
+- brand: PECRON
+  base: https://www.pecron.com
+# 取れなかった店(2026-11-13): Anker SOLIX(products.jsonが404)、BLUETTI(JSONでなくHTML)、OUKITEL(該当0件)
