@@ -30,8 +30,9 @@ jobs:
               except FileNotFoundError:
                   print(f, "missing"); continue
               print(f, d["status"], len(d["items"]))
-              for r in d["items"][:40]:
-                  print("  ", {k: r.get(k) for k in ("brand", "provider", "name", "variant", "plan", "price", "monthly", "wh", "wh_src", "w", "lfp", "kit", "vcpu", "ram_gb")})
+              for r in d["items"]:
+                  if "wh" in r:
+                      print(f"  {r['price']/r['wh']:.3f} {r['price']:>7} {r['wh']:>7.0f}Wh {r['wh_src'][:4]} {r['w']} lfp={int(r['lfp'])} {r['brand'][:8]:8} {r['name'][:70]} | {r['variant'][:30]}")
           PY
       - uses: actions/upload-artifact@v4
         with:
