@@ -1,5 +1,4 @@
 """US公式ストアのポータブル電源の価格を集めて data/en_power.json に保存する。"""
-import collections
 import datetime as dt
 import pathlib
 import re
@@ -14,7 +13,8 @@ HERE = pathlib.Path(__file__).resolve().parent
 IS_STATION = re.compile(r"power station|portable power|solar generator|home backup|power bank station", re.I)
 NOT_STATION = re.compile(r"\b(cable|adapter|bag|case|cover|charger only|panel only|extra battery|expansion battery|smart extra|"
                          r"warranty|protection plan|gift card|accessor|mount|tripod|refrigerator|fridge|cooler|air conditioner|"
-                         r"lawn|mower|e-?bike|scooter)\b", re.I)
+                         r"lawn|mower|e-?bike|scooter|battery pack|subscriber exclusive|refurbished|renewed)\b"
+                         r"|\b(canada|mexico|mex|uk|eu|australia|au)\s*only\b|\bonly\s*(canada|mex|mexico|uk|eu|au)\b", re.I)
 WH = re.compile(r"(\d{1,2}(?:[.,]\d{1,3})?)\s*kwh|(\d{3,5}|\d{1,2},\d{3})\s*wh\b", re.I)
 WATT = re.compile(r"(\d{3,5}|\d{1,2},\d{3})\s*w\b(?!h)", re.I)
 TAG = re.compile(r"<[^>]+>")
@@ -37,7 +37,8 @@ def capacity(title: str, vtitle: str, body: str) -> tuple[float | None, str]:
             return v[0], src
     v = wh_values(TAG.sub(" ", body or ""))
     if v:
-        return collections.Counter(v).most_common(1)[0][0], "description"
+        # 説明文には「最大○kWhまで拡張」なども出るので、本体容量として一番小さい値を使う
+        return min(v), "description"
     return None, ""
 
 
@@ -71,7 +72,9 @@ def main():
                     continue
                 body = p.get("body_html") or ""
                 lfp = bool(re.search(r"lifepo4|\blfp\b", body + title, re.I))
-                kit = bool(re.search(r"solar panel|\bpanel\b|\+|bundle|kit", title, re.I))
+                if re.search(r"solar panel|\bpanel\b|\+|bundle|\bkit\b", title, re.I):
+                    continue  # 太陽光パネル付きセットは本体の価格比較にならないので載せない
+                pre = bool(re.search(r"pre-?order", title, re.I))
                 for v in p.get("variants", []):
                     if not v.get("available", True):
                         continue
@@ -90,7 +93,7 @@ def main():
                         "brand": s["brand"], "name": title, "variant": vt,
                         "url": f"{s['base']}/products/{p.get('handle')}" + (f"?variant={v['id']}" if vt else ""),
                         "price": price, "was": was if was and was > price else None,
-                        "wh": wh, "wh_src": src, "w": output_w(title, body), "lfp": lfp, "kit": kit,
+                        "wh": wh, "wh_src": src, "w": output_w(title, body), "lfp": lfp, "pre": pre,
                     })
                     n += 1
             status[s["brand"]] = f"ok {n}"
@@ -100,8 +103,8 @@ def main():
     # 同じ商品の同じ容量は一番安い型だけ残す
     best = {}
     for r in rows:
-        k = (r["brand"], r["name"], r["wh"])
-        if k not in best or r["price"] < best[k]["price"]:
+        k = (r["brand"], r["wh"], r["price"])  # 同じ品が別ページで重複掲載されていることが多い
+        if k not in best or len(r["name"]) < len(best[k]["name"]):
             best[k] = r
     rows = sorted(best.values(), key=lambda r: r["price"] / r["wh"])
     hist = update_history("en_power_history.json", {r["key"]: r["price"] for r in rows})

@@ -3,17 +3,12 @@
   base: https://us.ecoflow.com
 - brand: Jackery
   base: https://www.jackery.com
-- brand: Anker SOLIX
-  base: https://www.ankersolix.com
-- brand: BLUETTI
-  base: https://www.bluettipower.com
 - brand: ALLPOWERS
   base: https://iallpowers.com
 - brand: VTOMAN
   base: https://vtoman.com
 - brand: Goal Zero
   base: https://goalzero.com
-- brand: OUKITEL
-  base: https://oukitel.com
 - brand: PECRON
   base: https://www.pecron.com
+# 取れなかった店(2026-11-13): Anker SOLIX(products.jsonが404)、BLUETTI(JSONでなくHTML)、OUKITEL(該当0件)

@@ -21,8 +21,7 @@ def build_power():
     if not d or not d["items"]:
         return None
     items = [r for r in d["items"]]
-    std = [r for r in items if not r["kit"]]
-    best = min(std or items, key=lambda r: r["price"] / r["wh"])
+    best = min(items, key=lambda r: r["price"] / r["wh"])
     def is_low(r):  # 7日以上記録があり、30日の最安で、かつ30日内の最高値より下がっている
         return r["days"] >= 7 and r["price"] <= r["low30"] and r["price"] < r.get("high30", r["price"])
     deals = [r for r in items if is_low(r)]
@@ -32,7 +31,7 @@ def build_power():
         href, aff = affiliate(r["url"], r["brand"], LINKS)
         per = r["price"] / r["wh"]
         off = round((1 - r["price"] / r["was"]) * 100) if r.get("was") else 0
-        tags = ("<span class='tag'>LiFePO4</span>" if r["lfp"] else "") + ("<span class='tag'>kit</span>" if r["kit"] else "") + \
+        tags = ("<span class='tag'>LiFePO4</span>" if r["lfp"] else "") + ("<span class='tag'>pre-order</span>" if r.get("pre") else "") + \
                ("<span class='tag low'>30-day low</span>" if is_low(r) else "")
         name = r["name"] + (f" – {r['variant']}" if r["variant"] else "")
         rel = "sponsored nofollow noopener" if aff else "nofollow noopener"
@@ -40,7 +39,7 @@ def build_power():
         was_txt = f"<span class='sub'><s>{money(r['was'])}</s> <span class='deal'>−{off}%</span></span>" if off else ""
         trs.append(
             f"<tr data-per='{per:.4f}' data-price='{r['price']}' data-wh='{r['wh']}' data-off='{off}' data-brand='{e(r['brand'])}' "
-            f"data-lfp='{int(r['lfp'])}' data-kit='{int(r['kit'])}'>"
+            f"data-lfp='{int(r['lfp'])}'>"
             f"<td><a href='{e(href)}' rel='{rel}' target='_blank'>{e(name)}</a>{tags}<span class='sub'>{e(r['brand'])}"
             f"{' · capacity from description' if r['wh_src'] == 'description' else ''}</span></td>"
             f"<td data-l='$/Wh' class='key'>{per:.3f}</td><td data-l='Capacity'>{r['wh']:,.0f} Wh</td>"
@@ -56,8 +55,7 @@ def build_power():
 <option value="wh:d">Capacity, high first</option><option value="off:d">Discount, high first</option></select></label>
 <label>Brand <select data-f="brand"><option value="">All</option>{opts}</select></label>
 <label>Min Wh <input type="number" data-f="wh" data-op="min" step="100" min="0" placeholder="any"></label>
-<label><input type="checkbox" data-f="lfp" data-op="flag" value="1"> LiFePO4 only</label>
-<label><input type="checkbox" data-f="kit" data-op="noflag" value="1" checked> Hide solar kits</label></form>
+<label><input type="checkbox" data-f="lfp" data-op="flag" value="1"> LiFePO4 only</label></form>
 <table class="tbl"><thead><tr><th>Model</th><th>$/Wh</th><th>Capacity</th><th>AC output</th><th>Price</th></tr></thead><tbody>{''.join(trs)}</tbody></table>"""
     out = SITE / "power"
     out.mkdir(parents=True, exist_ok=True)

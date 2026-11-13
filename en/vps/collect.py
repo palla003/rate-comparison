@@ -22,11 +22,12 @@ def vultr():
     out = []
     for p in get_json("https://api.vultr.com/v2/plans?per_page=500", check_robots=False)["plans"]:
         kind = VULTR_KIND.get(p["type"]) or (VULTR_KIND["voc"] if p["type"].startswith("voc") else None)
-        if not kind or not p.get("locations"):
+        if not kind or not p.get("locations") or not p.get("monthly_cost"):
             continue
         out.append(dict(provider="Vultr", plan=p["id"], family=kind[0], cpu=kind[1], vcpu=p["vcpu_count"],
                         ram_gb=p["ram"] / 1024, disk_gb=p["disk"] * max(1, p.get("disk_count", 1)),
-                        transfer_tb=p["bandwidth"] / 1000, monthly=float(p["monthly_cost"]), regions=len(p["locations"])))
+                        transfer_tb=p["bandwidth"] / 1000, monthly=float(p["monthly_cost"]), regions=len(p["locations"]),
+                        note="IPv6 only" if p["id"].endswith("-v6") else None))
     return out
 
 
