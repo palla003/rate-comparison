@@ -7,8 +7,8 @@ Jackery: {}
 Anker SOLIX: {}
 BLUETTI: {}
 Vultr:
-  # Vultrは紹介コード方式。https://www.vultr.com/?ref=XXXX
-  template: ""
+  # Vultrは紹介コード方式(2026-11-14 登録)。どのページにも ?ref= を付ければ有効
+  template: "https://www.vultr.com/products/cloud-compute/?ref=9935726"
 Linode: {}
 DigitalOcean: {}
 Hetzner: {}
