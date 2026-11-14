@@ -3691,5 +3691,24 @@
   "date": "2026-11-14",
   "type": "gone",
   "key": "岡崎信用金庫 おかしんインターネット支店|コンティニューボンド２０２６ 3年|36"
+ },
+ {
+  "date": "2026-11-14",
+  "type": "up",
+  "offer": {
+   "product": "BANK 円普通預金",
+   "kind": "普通預金",
+   "term_months": null,
+   "rate_pct": 1.2,
+   "rate_is_max": false,
+   "new_customer_only": false,
+   "min_amount_yen": 1,
+   "conditions": "BANK口座限定・預入金額100万円以下・変動金利",
+   "start_date": null,
+   "end_date": null,
+   "quota": null,
+   "bank": "あおぞら銀行 BANK"
+  },
+  "prev": 0.75
  }
 ]

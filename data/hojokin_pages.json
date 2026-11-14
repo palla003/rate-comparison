@@ -1131,7 +1131,7 @@
    "domain": "vill.kiyokawa.kanagawa.jp",
    "pages": [],
    "searched_at": "2026-11-14T07:24+09:00",
-   "error": null
+   "error": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch1xzE6bdpUmz5wZ3Wcef'}"
   }
  }
 }
