@@ -1,12 +1,12 @@
 {
- "checked": "2026-11-20 02:34",
+ "checked": "2026-11-21 02:44",
  "status": {
   "EcoFlow": "ok 20",
   "Jackery": "ok 8",
   "ALLPOWERS": "ok 5",
   "VTOMAN": "ok 1",
   "Goal Zero": "ok 10",
-  "PECRON": "ok 8"
+  "PECRON": "ok 9"
  },
  "items": [
   {
@@ -24,7 +24,24 @@
    "pre": true,
    "low30": 899.0,
    "high30": 899.0,
-   "days": 8
+   "days": 9
+  },
+  {
+   "key": "PECRON|pecron-e3600lfp-portable-power-station-3600w-3072wh|43882473881788",
+   "brand": "PECRON",
+   "name": "PECRON E3600LFP Portable Power Station 3600W 3072Wh",
+   "variant": "E3600LFP / Without Trolley",
+   "url": "https://www.pecron.com/products/pecron-e3600lfp-portable-power-station-3600w-3072wh?variant=43882473881788",
+   "price": 999.0,
+   "was": 2299.0,
+   "wh": 3072.0,
+   "wh_src": "title",
+   "w": 3600.0,
+   "lfp": true,
+   "pre": false,
+   "low30": 999.0,
+   "high30": 999.0,
+   "days": 1
   },
   {
    "key": "ALLPOWERS|allpowers-r2500-v2-portable-power-station-2500w-1920wh|48261423005849",
@@ -41,7 +58,7 @@
    "pre": false,
    "low30": 649.0,
    "high30": 649.0,
-   "days": 8
+   "days": 9
   },
   {
    "key": "PECRON|pecron-e1500lfp-expandable-power-station-2200w-1536wh|42739059327164",
@@ -58,7 +75,7 @@
    "pre": false,
    "low30": 549.0,
    "high30": 549.0,
-   "days": 8
+   "days": 9
   },
   {
    "key": "PECRON|pecron-e3800lfp-portable-power-station-4200w-3840wh|45804485083324",
@@ -75,7 +92,7 @@
    "pre": false,
    "low30": 1399.0,
    "high30": 1399.0,
-   "days": 8
+   "days": 9
   },
   {
    "key": "ALLPOWERS|allpowers-r3500-portable-power-station-3200w-3168wh|43598617313433",
@@ -92,7 +109,7 @@
    "pre": false,
    "low30": 1199.0,
    "high30": 1199.0,
-   "days": 7
+   "days": 8
   },
   {
    "key": "VTOMAN|vtoman-jump-1800-portable-power-station|44511480283305",
@@ -109,24 +126,7 @@
    "pre": false,
    "low30": 499.0,
    "high30": 539.0,
-   "days": 8
-  },
-  {
-   "key": "PECRON|pecron-e1000lfp-portable-power-station-2000w-1024wh|44274637734076",
-   "brand": "PECRON",
-   "name": "PECRON E1000LFP Portable Power Station 1800W 1024Wh",
-   "variant": "E1000LFP",
-   "url": "https://www.pecron.com/products/pecron-e1000lfp-portable-power-station-2000w-1024wh?variant=44274637734076",
-   "price": 399.0,
-   "was": 799.0,
-   "wh": 1024.0,
-   "wh_src": "title",
-   "w": 1800.0,
-   "lfp": true,
-   "pre": false,
-   "low30": 399.0,
-   "high30": 399.0,
-   "days": 8
+   "days": 9
   },
   {
    "key": "PECRON|pecron-f1000lfp-portable-power-station-1500w-960wh|45854615929020",
@@ -143,7 +143,7 @@
    "pre": false,
    "low30": 399.0,
    "high30": 399.0,
-   "days": 8
+   "days": 9
   },
   {
    "key": "EcoFlow|ecoflow-delta-3-max-portable-power-station-2048wh|55917251526729",
@@ -160,7 +160,7 @@
    "pre": false,
    "low30": 854.0,
    "high30": 879.0,
-   "days": 8
+   "days": 9
   },
   {
    "key": "EcoFlow|delta-3800-gen4|67641627803721",
@@ -177,7 +177,7 @@
    "pre": false,
    "low30": 1699.0,
    "high30": 2199.0,
-   "days": 8
+   "days": 9
   },
   {
    "key": "ALLPOWERS|allpowers-p1800-portable-power-station-1024wh-1800w|48268416909465",
@@ -194,7 +194,7 @@
    "pre": false,
    "low30": 399.0,
    "high30": 439.0,
-   "days": 8
+   "days": 9
   },
   {
    "key": "EcoFlow|ecoflow-delta-3000-gen4-solar-generator|67651089989705",
@@ -211,7 +211,7 @@
    "pre": false,
    "low30": 1299.0,
    "high30": 1699.0,
-   "days": 8
+   "days": 9
   },
   {
    "key": "EcoFlow|ecoflow-delta-3-ultra-portable-power-station-3072wh|55609357140041",
@@ -228,7 +228,7 @@
    "pre": false,
    "low30": 1299.0,
    "high30": 1369.0,
-   "days": 8
+   "days": 9
   },
   {
    "key": "EcoFlow|delta-3-classic-portable-power-station|54691871227977",
@@ -245,7 +245,7 @@
    "pre": false,
    "low30": 459.0,
    "high30": 479.0,
-   "days": 8
+   "days": 9
   },
   {
    "key": "EcoFlow|river-2-pro-portable-power-station|54320636198985",
@@ -262,7 +262,7 @@
    "pre": false,
    "low30": 349.0,
    "high30": 369.0,
-   "days": 7
+   "days": 8
   },
   {
    "key": "ALLPOWERS|allpowers-2400w-portable-power-station|42882903310489",
@@ -279,7 +279,7 @@
    "pre": false,
    "low30": 549.0,
    "high30": 664.05,
-   "days": 8
+   "days": 9
   },
   {
    "key": "Jackery|jackery-solar-generator-homepower-3600-plus|44529510449239",
@@ -296,7 +296,7 @@
    "pre": false,
    "low30": 3199.0,
    "high30": 3309.0,
-   "days": 8
+   "days": 9
   },
   {
    "key": "PECRON|pecron-e500lfp-portable-power-station-600w-576wh|44050347360444",
@@ -313,7 +313,7 @@
    "pre": false,
    "low30": 269.0,
    "high30": 269.0,
-   "days": 8
+   "days": 9
   },
   {
    "key": "PECRON|pecron-f5000lfp-portable-power-station|46039615865020",
@@ -330,7 +330,7 @@
    "pre": true,
    "low30": 2399.0,
    "high30": 2399.0,
-   "days": 8
+   "days": 9
   },
   {
    "key": "Jackery|explorer-2000-v2-portable-power-station|41585656365143",
@@ -347,7 +347,7 @@
    "pre": false,
    "low30": 999.0,
    "high30": 999.0,
-   "days": 8
+   "days": 9
   },
   {
    "key": "Goal Zero|tank-pro-4000-lifepo4-battery|43238379716777",
@@ -364,7 +364,7 @@
    "pre": false,
    "low30": 1999.95,
    "high30": 1999.95,
-   "days": 8
+   "days": 9
   },
   {
    "key": "EcoFlow|delta-2-max-portable-power-station|54615943512137",
@@ -381,7 +381,7 @@
    "pre": false,
    "low30": 1029.0,
    "high30": 1029.0,
-   "days": 8
+   "days": 9
   },
   {
    "key": "EcoFlow|trail-series|54553979682889",
@@ -398,7 +398,7 @@
    "pre": false,
    "low30": 99.0,
    "high30": 109.0,
-   "days": 8
+   "days": 9
   },
   {
    "key": "EcoFlow|ecoflow-delta-3-ultra-plus-portable-power-station-3072wh|55612118532169",
@@ -415,7 +415,7 @@
    "pre": false,
    "low30": 1599.0,
    "high30": 1599.0,
-   "days": 8
+   "days": 9
   },
   {
    "key": "ALLPOWERS|allpowers-volix-p300-portable-power-station|45857783742617",
@@ -432,7 +432,7 @@
    "pre": false,
    "low30": 139.0,
    "high30": 139.0,
-   "days": 8
+   "days": 9
   },
   {
    "key": "EcoFlow|ecoflow-delta-3-max-plus-portable-power-station-2048wh|55917273448521",
@@ -449,7 +449,7 @@
    "pre": false,
    "low30": 1149.0,
    "high30": 1149.0,
-   "days": 8
+   "days": 9
   },
   {
    "key": "EcoFlow|delta-3-portable-power-station|42015827492937",
@@ -466,7 +466,7 @@
    "pre": false,
    "low30": 579.0,
    "high30": 599.0,
-   "days": 8
+   "days": 9
   },
   {
    "key": "Jackery|jackery-explorer-1500-v2-portable-power-station|42138492174423",
@@ -483,7 +483,7 @@
    "pre": false,
    "low30": 849.0,
    "high30": 949.0,
-   "days": 8
+   "days": 9
   },
   {
    "key": "Goal Zero|20kwh-haven-home-battery-backup|43241411608745",
@@ -500,7 +500,7 @@
    "pre": false,
    "low30": 12998.95,
    "high30": 12998.95,
-   "days": 8
+   "days": 9
   },
   {
    "key": "Goal Zero|16kwh-haven-home-battery-backup|43241409478825",
@@ -517,7 +517,7 @@
    "pre": false,
    "low30": 10998.95,
    "high30": 10998.95,
-   "days": 8
+   "days": 9
   },
   {
    "key": "Goal Zero|12kwh-haven-home-battery-backup|43241407578281",
@@ -534,7 +534,7 @@
    "pre": false,
    "low30": 8998.95,
    "high30": 8998.95,
-   "days": 8
+   "days": 9
   },
   {
    "key": "Jackery|jackery-explorer-1500-ultra-portable-power-station|42447145435223",
@@ -551,7 +551,7 @@
    "pre": false,
    "low30": 1079.0,
    "high30": 1199.0,
-   "days": 8
+   "days": 9
   },
   {
    "key": "EcoFlow|river-2-240-portable-power-station|40957077487689",
@@ -568,7 +568,7 @@
    "pre": false,
    "low30": 189.0,
    "high30": 199.0,
-   "days": 8
+   "days": 9
   },
   {
    "key": "Jackery|jackery-explorer-300d-portable-power-station|42204275408983",
@@ -585,7 +585,7 @@
    "pre": false,
    "low30": 209.0,
    "high30": 249.0,
-   "days": 8
+   "days": 9
   },
   {
    "key": "Goal Zero|8kwh-haven-home-battery-backup|43241403842729",
@@ -602,7 +602,7 @@
    "pre": false,
    "low30": 6998.95,
    "high30": 6998.95,
-   "days": 8
+   "days": 9
   },
   {
    "key": "Jackery|jackery-explorer-300-solarsaga-100w-solar-generator|44213908734039",
@@ -619,7 +619,7 @@
    "pre": false,
    "low30": 289.0,
    "high30": 289.0,
-   "days": 8
+   "days": 9
   },
   {
    "key": "Goal Zero|yeti-pro-4000-power-station|43235373580457",
@@ -636,7 +636,7 @@
    "pre": false,
    "low30": 3999.95,
    "high30": 3999.95,
-   "days": 8
+   "days": 9
   },
   {
    "key": "Goal Zero|new-yeti-1000-portable-power-station-lfp-battery|46846798364841",
@@ -653,7 +653,7 @@
    "pre": false,
    "low30": 1199.95,
    "high30": 1199.95,
-   "days": 3
+   "days": 4
   },
   {
    "key": "EcoFlow|river-portable-power-station|41881724354633",
@@ -670,7 +670,7 @@
    "pre": false,
    "low30": 349.0,
    "high30": 349.0,
-   "days": 8
+   "days": 9
   },
   {
    "key": "Goal Zero|4-kwh-haven-home-battery-backup|43240814149801",
@@ -687,7 +687,7 @@
    "pre": false,
    "low30": 4998.95,
    "high30": 4998.95,
-   "days": 8
+   "days": 9
   },
   {
    "key": "Goal Zero|yeti-pro-4000-tank-pro-4000-lifepo4-battery|43249522409641",
@@ -704,7 +704,7 @@
    "pre": false,
    "low30": 5998.95,
    "high30": 5998.95,
-   "days": 8
+   "days": 9
   },
   {
    "key": "Goal Zero|1-kwh-home-energy-storage-kit|41236728479913",
@@ -721,7 +721,7 @@
    "pre": false,
    "low30": 1649.9,
    "high30": 1649.9,
-   "days": 8
+   "days": 9
   },
   {
    "key": "EcoFlow|river-mini-portable-power-station|39428799987785",
@@ -738,7 +738,7 @@
    "pre": false,
    "low30": 399.0,
    "high30": 399.0,
-   "days": 8
+   "days": 9
   }
  ]
 }
